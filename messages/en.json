@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Piazza del Popolo, Ascoli Piceno - Tourism Guide",
-    "description": "Independent tourism guide to Piazza del Popolo, the Renaissance heart of Ascoli Piceno. Discover history, architecture, reviews, and tips for your visit."
+    "title": "Chronicles of Georgia - Tourism Guide",
+    "description": "Independent tourism guide to the Chronicles of Georgia monument. Discover history, architecture, reviews, and tips for your visit."
   },
   "nav": {
     "home": "Home",
@@ -14,34 +14,34 @@
     "cookies": "Cookie Settings"
   },
   "hero": {
-    "title": "Piazza del Popolo",
-    "subtitle": "The Renaissance drawing room of Ascoli Piceno",
-    "rating": "4.7/5",
-    "ratingCount": "(16,016 reviews)",
-    "openHours": "Open 24/7",
+    "title": "Chronicles of Georgia",
+    "subtitle": "Zurab Tsereteli's masterpiece - Georgia's historical monument",
+    "rating": "4.8/5",
+    "ratingCount": "(12,626 reviews)",
+    "openHours": "Open 24 hours",
     "openMaps": "Open in Google Maps",
-    "keywords": ["Square", "Renaissance", "Travertine", "Caffè Meletti", "Palazzo dei Capitani", "Loggia dei Mercanti", "Porticoes"]
+    "keywords": ["Monument", "History", "Georgian culture", "Zurab Tsereteli", "Soviet modernism", "Tbilisi", "Photography", "Tourism"]
   },
   "intro": {
-    "title": "Discover the Square",
-    "description": "Piazza del Popolo is the beating heart of Ascoli Piceno, one of the most elegant squares in Italy. Entirely paved in travertine, it is surrounded by Renaissance buildings with harmonious porticoes.",
+    "title": "Discover the Monument",
+    "description": "The Chronicles of Georgia is a giant historical monument located in the upper part of Tbilisi, in the Temqa district. Created by the famous Georgian sculptor Zurab Tsereteli in 1985.",
     "highlights": [
-      "Entirely clad in local travertine stone",
-      "Palazzo dei Capitani del Popolo (13th century)",
-      "Historic Caffè Meletti, an Art Nouveau gem",
-      "16th-century Loggia dei Mercanti",
-      "Elegant porticoes on three sides"
+      "30-meter high columns from Georgian history",
+      "Reliefs of Georgian kings and saints",
+      "Soviet era modernist architecture",
+      "Unforgettable views of Tbilisi",
+      "Free entry and photography"
     ]
   },
   "gallery": {
     "title": "Photo Gallery",
     "photos": [
-      {"caption": "Panoramic view of the square at sunset"},
-      {"caption": "Palazzo dei Capitani del Popolo"},
-      {"caption": "Caffè Meletti - Art Nouveau interior"},
-      {"caption": "Renaissance porticoes"},
-      {"caption": "Travertine paving"},
-      {"caption": "Loggia dei Mercanti"}
+      {"caption": "Panoramic view of the monument at sunset"},
+      {"caption": "Reliefs of Georgian kings"},
+      {"caption": "Column details and ornaments"},
+      {"caption": "View of Tbilisi from the monument"},
+      {"caption": "Historical scenes on the columns"},
+      {"caption": "The monument at night"}
     ]
   },
   "reviews": {
@@ -49,72 +49,72 @@
     "declaration": "Ratings and reviews sourced from Google Maps (last updated: 2026). We only display a selection of verified high-scoring reviews. For all complete and most recent reviews, click the link below.",
     "moreLink": "See all reviews on Google Maps",
     "items": [
-      {"name": "Marco R.", "date": "March 2026", "stars": 5, "text": "One of the most beautiful squares in Italy. The atmosphere at sunset is magical, with the illuminated porticoes and the travertine turning golden."},
-      {"name": "Giulia S.", "date": "February 2026", "stars": 5, "text": "Wonderful square! Caffè Meletti is a must-visit — try the anisetta. The Renaissance architecture is perfectly preserved."},
-      {"name": "Thomas K.", "date": "January 2026", "stars": 5, "text": "Incredible that this square is so little known outside Italy. It easily rivals the most famous piazzas."},
-      {"name": "Yuki T.", "date": "December 2025", "stars": 5, "text": "The white travertine makes everything bright and elegant. The porticoes offer shelter from both sun and rain. Perfect in every season."},
-      {"name": "Alessandro M.", "date": "November 2025", "stars": 4, "text": "Beautiful square, a gathering point for all locals. The Quintana festival in August transforms the piazza into a medieval stage."},
-      {"name": "Sophie L.", "date": "October 2025", "stars": 5, "text": "We spent hours sitting at the outdoor tables admiring the architecture. Palazzo dei Capitani is imposing, and the civic tower dominates the square."},
-      {"name": "Hans W.", "date": "September 2025", "stars": 5, "text": "This square is a masterpiece of architectural harmony. Every building blends perfectly with the others. An absolute must-visit."},
-      {"name": "Chiara B.", "date": "August 2025", "stars": 5, "text": "During the Quintana, the square comes alive with medieval colours. But even on an ordinary day, it is a place of extraordinary peace and beauty."}
+      {"name": "Nika K.", "date": "March 2026", "stars": 5, "text": "Amazing place! The view of Tbilisi is simply incredible. Every page of history is depicted in these columns."},
+      {"name": "Mariam B.", "date": "February 2026", "stars": 5, "text": "Must see! Zurab Tsereteli's creation is simply magnificent. The best place for taking photos."},
+      {"name": "David M.", "date": "January 2026", "stars": 5, "text": "Georgian Stonehenge - that's what foreigners call it. It truly deserves this name."},
+      {"name": "Anna C.", "date": "December 2025", "stars": 5, "text": "Perfect place for history lovers. Every column tells a story."},
+      {"name": "Thomas B.", "date": "November 2025", "stars": 5, "text": "Amazing Soviet-era monument with incredible views over Tbilisi. A must-visit for architecture enthusiasts."},
+      {"name": "Sofia L.", "date": "October 2025", "stars": 4, "text": "Very beautiful, but the location is a bit hard to find. But it's worth the search."},
+      {"name": "Alex R.", "date": "September 2025", "stars": 5, "text": "The Black Pillars of Tbilisi - perfect name for photography. Golden hour here is magical."},
+      {"name": "Natia G.", "date": "August 2025", "stars": 5, "text": "Tbilisi's calling card. Every Georgian should see it and we should show it to every foreigner."}
     ]
   },
   "guide": {
     "title": "Visitor Guide",
     "visitDuration": {
       "title": "How long does a visit take?",
-      "text": "A visit to the square takes about 1-2 hours. Allow extra time for a coffee at Meletti and to explore the surrounding streets of the historic centre."
+      "text": "A visit to the monument takes about 1-2 hours. Allow extra time for taking photos and enjoying the views of Tbilisi."
     },
     "worthIt": {
       "title": "Is it worth visiting?",
-      "text": "Absolutely. Piazza del Popolo is considered one of the most beautiful squares in Italy, often compared to Piazza San Marco for its architectural harmony."
+      "text": "Absolutely. The Chronicles of Georgia is one of the most amazing monuments in Tbilisi, depicting 3000 years of Georgian nation history."
     },
     "whatInside": {
-      "title": "What can you find in the square?",
+      "title": "What can you find at the monument?",
       "items": [
-        "Palazzo dei Capitani del Popolo - seat of civic power since the 13th century",
-        "Church of San Francesco - Gothic, dominating the western side",
-        "Caffè Meletti - historic Art Nouveau café (since 1907)",
-        "Loggia dei Mercanti - elegant 16th-century structure",
-        "Numerous bars and restaurants under the porticoes"
+        "30-meter columns with scenes from Georgian history",
+        "Reliefs of Georgian kings and saints",
+        "Depiction of the adoption of Christianity",
+        "Unforgettable views of Tbilisi and the Kura River",
+        "Soviet era modernist architecture"
       ]
     },
     "tips": {
       "title": "Practical Tips",
       "items": [
-        "Visit at sunset for the best light on the travertine",
-        "The Quintana festival (first Sunday of August) is spectacular",
-        "Try olive ascolane at the trattorias in the square",
-        "The historic centre is pedestrianised, easy to explore on foot",
-        "Parking is available on the outskirts of the old town"
+        "Visit at sunset for the best views and photos",
+        "Bring water and comfortable shoes",
+        "Be careful in winter, it can be slippery",
+        "You can get there by bus, but taxi is the best option",
+        "Free entry at any time"
       ]
     },
     "comparison": {
-      "title": "Comparison with Similar Squares",
-      "headers": ["Feature", "Piazza del Popolo", "Piazza del Duomo (Trento)", "Piazza San Marco (Venice)"],
+      "title": "Comparison with Similar Monuments",
+      "headers": ["Feature", "Chronicles of Georgia", "Stalin Monument (Gori)", "Metekhi Church"],
       "rows": [
-        ["Era", "Renaissance", "Medieval-Renaissance", "Byzantine-Renaissance"],
-        ["Material", "Travertine", "Local stone", "Istrian stone"],
-        ["Porticoes", "Three sides", "Partial", "Three sides"],
-        ["Access", "Free 24/7", "Free 24/7", "Free 24/7"],
-        ["Crowding", "Low", "Medium", "Very high"],
-        ["Historic cafés", "Caffè Meletti", "Various", "Caffè Florian"]
+        ["Era", "Soviet (1985)", "Soviet (1952)", "Medieval"],
+        ["Style", "Modernism", "Socialist Realism", "Georgian Baroque"],
+        ["Material", "Concrete and stone", "Bronze", "Brick"],
+        ["Entry", "Free", "Paid", "Free"],
+        ["Location", "Temqa, Tbilisi", "Gori", "Old Tbilisi"],
+        ["Significance", "History", "History", "Religion"]
       ]
     }
   },
   "map": {
     "title": "How to Get There",
-    "address": "Piazza del Popolo, 63100 Ascoli Piceno AP, Italy",
+    "address": "QRC6+65V, Chronicles of Georgia Temqa, Tbilisi, Georgia",
     "openMaps": "Open in Google Maps"
   },
   "sources": {
     "title": "Data and References",
     "text": "This website is an independent third-party project for tourism information purposes. Information is sourced from public sources including Google Maps, local tourism authorities, and Wikipedia. Photos are sourced from Unsplash.",
-    "disclaimer": "We are not affiliated with the Municipality of Ascoli Piceno or any other official body."
+    "disclaimer": "We are not affiliated with the Municipality of Tbilisi or any other official body."
   },
   "footer": {
     "support": "For technical support regarding this website, contact:",
-    "rights": "© 2026 Piazza del Popolo Guide · All rights reserved.",
+    "rights": "© 2026 Chronicles of Georgia · All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "cookies": "Cookie Settings"
@@ -124,18 +124,19 @@
     "dark": "Dark mode"
   },
   "language": {
-    "it": "Italiano",
+    "ka": "ქართული",
     "en": "English",
-    "fr": "Français",
-    "zh-hant": "繁體中文"
+    "ru": "Русский",
+    "zh-hant": "繁體中文",
+    "zh-cn": "简体中文"
   },
   "privacy": {
     "title": "Privacy Policy",
-    "content": "This website collects minimal browsing data through technical cookies to ensure the site functions correctly. We do not collect personally identifiable data. For privacy enquiries, contact: claritleonelmnicol@gmail.com"
+    "content": "This website collects minimal browsing data through technical cookies to ensure the site functions correctly. We do not collect personally identifiable data. For privacy enquiries, contact: n20186005@gmail.com"
   },
   "terms": {
     "title": "Terms of Service",
-    "content": "This website provides tourism information for informational purposes. Information is gathered from public sources and may not always be up to date. Use of this website implies acceptance of these terms. For enquiries, contact: claritleonelmnicol@gmail.com"
+    "content": "This website provides tourism information for informational purposes. Information is gathered from public sources and may not always be up to date. Use of this website implies acceptance of these terms. For enquiries, contact: n20186005@gmail.com"
   },
   "cookieSettings": {
     "title": "Cookie Settings",
