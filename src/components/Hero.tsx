@@ -18,12 +18,17 @@ export default function Hero() {
       <div className="absolute inset-0" style={{ background: 'var(--hero-overlay)' }} />
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-6 max-w-4xl">
+      <div className="relative z-10 text-center text-white px-6 max-w-5xl">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4 animate-fade-in-up">
           {t('title')}
         </h1>
-        <p className="text-xl md:text-2xl font-light mb-8 opacity-90 animate-fade-in-up animate-delay-1">
+        <p className="text-xl md:text-2xl font-light mb-6 opacity-90 animate-fade-in-up animate-delay-1">
           {t('subtitle')}
+        </p>
+        
+        {/* SEO-optimized tagline */}
+        <p className="text-lg md:text-xl font-light mb-8 opacity-80 animate-fade-in-up animate-delay-1">
+          "{t('tagline') || 'The Dark Stonehenge of Tbilisi - A Soviet-era masterpiece that tells 3000 years of Georgian history'}"
         </p>
 
         {/* Rating & Hours */}

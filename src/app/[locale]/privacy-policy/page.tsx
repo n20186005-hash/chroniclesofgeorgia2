@@ -3,21 +3,22 @@ import Link from 'next/link';
 import { defaultLocale } from '@/i18n/config';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const baseUrl = 'https://www.piazzapopoloascoli.com';
+  const baseUrl = 'https://www.chroniclesofgeorgia.com';
   const path = '/privacy-policy';
 
   const alternateLanguages: Record<string, string> = {
-    'it': `${baseUrl}/it${path}`,
+    'ka': `${baseUrl}${path}`,
     'en': `${baseUrl}/en${path}`,
-    'fr': `${baseUrl}/fr${path}`,
+    'ru': `${baseUrl}/ru${path}`,
     'zh-Hant': `${baseUrl}/zh-hant${path}`,
+    'zh-CN': `${baseUrl}/zh-cn${path}`,
     'x-default': `${baseUrl}/en${path}`,
   };
 
   const canonicalUrl = locale === defaultLocale ? `${baseUrl}${path}` : `${baseUrl}/${locale}${path}`;
 
   return {
-    title: 'Privacy Policy - Piazza del Popolo',
+    title: 'Privacy Policy - Chronicles of Georgia',
     alternates: {
       canonical: canonicalUrl,
       languages: alternateLanguages,
@@ -35,7 +36,7 @@ export default function PrivacyPolicyPage() {
       sections: [
         {
           title: "1. Information Collection",
-          text: "We are committed to protecting your privacy. This site primarily serves as an informational platform and generally does not actively collect personally identifiable information from users. However, through server logs and analytics tools, we may collect non-personally identifiable information such as browser type, access times, and page view records."
+          text: "We are committed to protecting your privacy. This site primarily serves as an informational platform about the Chronicles of Georgia monument and generally does not actively collect personally identifiable information from users. However, through server logs and analytics tools, we may collect non-personally identifiable information such as browser type, access times, and page view records."
         },
         {
           title: "2. Use of Cookies",
@@ -47,7 +48,7 @@ export default function PrivacyPolicyPage() {
         },
         {
           title: "4. Contact Us",
-          text: "If you have any questions or concerns regarding this privacy policy, please contact us at: claritleonelmnicol@gmail.com"
+          text: "If you have any questions or concerns regarding this privacy policy, please contact us at: n20186005@gmail.com"
         }
       ],
       backHome: "Back to Home"
@@ -58,7 +59,7 @@ export default function PrivacyPolicyPage() {
       sections: [
         {
           title: "1. 資訊收集",
-          text: "我們致力於保護您的隱私。本網站主要作為資訊平台，通常不會主動收集使用者的個人識別資訊。然而，透過伺服器日誌和分析工具，我們可能會收集非個人識別資訊，例如瀏覽器類型、存取時間和網頁瀏覽記錄。"
+          text: "我們致力於保護您的隱私。本網站主要作為格魯吉亞編年史紀念碑的資訊平台，通常不會主動收集使用者的個人識別資訊。然而，透過伺服器日誌和分析工具，我們可能會收集非個人識別資訊，例如瀏覽器類型、存取時間和網頁瀏覽記錄。"
         },
         {
           title: "2. Cookie 的使用",
@@ -70,56 +71,56 @@ export default function PrivacyPolicyPage() {
         },
         {
           title: "4. 聯絡我們",
-          text: "如果您對本隱私政策有任何疑問或疑慮，請聯絡我們：claritleonelmnicol@gmail.com"
+          text: "如果您對本隱私政策有任何疑問或疑慮，請聯絡我們：n20186005@gmail.com"
         }
       ],
       backHome: "返回首頁"
     },
-    fr: {
-      title: "Politique de confidentialité",
-      lastUpdated: "Dernière mise à jour : Mars 2026",
+    ru: {
+      title: "Политика конфиденциальности",
+      lastUpdated: "Последнее обновление: Март 2026",
       sections: [
         {
-          title: "1. Collecte d'informations",
-          text: "Nous nous engageons à protéger votre vie privée. Ce site sert principalement de plateforme d'information et ne collecte généralement pas activement d'informations d'identification personnelle des utilisateurs. Cependant, par le biais des journaux de serveur et des outils d'analyse, nous pouvons collecter des informations non personnellement identifiables telles que le type de navigateur, les temps d'accès et les enregistrements de pages vues."
+          title: "1. Сбор информации",
+          text: "Мы стремимся защищать вашу конфиденциальность. Этот сайт в первую очередь служит информационной платформой о памятнике Летописи Грузии и обычно не активно собирает персональную информацию от пользователей. Однако через журналы сервера и инструменты аналитики мы можем собирать неперсонализированную информацию, такую как тип браузера, время доступа и записи просмотра страниц."
         },
         {
-          title: "2. Utilisation des cookies",
-          text: "Pour offrir une meilleure expérience utilisateur et comprendre comment le site est utilisé, nous pouvons utiliser des cookies. Ces cookies sont utilisés pour se souvenir des préférences des utilisateurs et analyser le trafic du site. Vous pouvez ajuster les paramètres des cookies dans votre navigateur."
+          title: "2. Использование файлов cookie",
+          text: "Чтобы обеспечить лучший пользовательский опыт и понять, как используется сайт, мы можем использовать файлы cookie. Эти файлы cookie используются для запоминания предпочтений пользователей и анализа трафика сайта. Вы можете настроить параметры cookie в своем браузере."
         },
         {
-          title: "3. Liens tiers",
-          text: "Ce site peut contenir des liens vers des sites tiers (par exemple, Google Maps). Nous ne sommes pas responsables des pratiques de confidentialité de ces sites externes. Nous vous encourageons à lire les déclarations de confidentialité de chaque site qui collecte des informations personnelles lorsque vous quittez notre site."
+          title: "3. Сторонние ссылки",
+          text: "Этот сайт может содержать ссылки на сторонние сайты (например, Google Карты). Мы не несем ответственности за политику конфиденциальности этих внешних сайтов. Мы рекомендуем вам прочитать заявления о конфиденциальности любого сайта, который собирает персональную информацию, когда вы покидаете наш сайт."
         },
         {
-          title: "4. Nous contacter",
-          text: "Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité, veuillez nous contacter à : claritleonelmnicol@gmail.com"
+          title: "4. Свяжитесь с нами",
+          text: "Если у вас есть вопросы или проблемы, связанные с этой политикой конфиденциальности, пожалуйста, свяжитесь с нами: n20186005@gmail.com"
         }
       ],
-      backHome: "Retour à l'accueil"
+      backHome: "Вернуться на главную"
     },
-    it: {
-      title: "Informativa sulla privacy",
-      lastUpdated: "Ultimo aggiornamento: Marzo 2026",
+    ka: {
+      title: "კონფიდენციალურობის პოლიტიკა",
+      lastUpdated: "ბოლო განახლება: მარტი 2026",
       sections: [
         {
-          title: "1. Raccolta di informazioni",
-          text: "Ci impegniamo a proteggere la tua privacy. Questo sito funge principalmente da piattaforma informativa e generalmente non raccoglie attivamente informazioni di identificazione personale dagli utenti. Tuttavia, attraverso i log del server e gli strumenti di analisi, potremmo raccogliere informazioni non identificabili personalmente come il tipo di browser, i tempi di accesso e i record di visualizzazione delle pagine."
+          title: "1. ინფორმაციის შეგროვება",
+          text: "ჩვენ ვიცავთ თქვენს კონფიდენციალურობას. ეს საიტი ძირითადად slouz的信息平台ა საქართველოს მატიანის მონუმენტის შესახებ და ჩვეულებრივ არ აგროვებს აქტიურად პერსონალურ ინფორმაციას მომხმარებლებისგან. თუმცა, სერვერის ჟურნალებისა და ანალიტიკის ინსტრუმენტების მეშვეობით, ჩვენ შეიძლება შევაგროვოთ არაპერსონალური ინფორმაცია, როგორიცაა ბრაუზერის ტიპი, წვდომის დრო და გვერდების ნახვის ჩანაწერები."
         },
         {
-          title: "2. Uso dei cookie",
-          text: "Per fornire una migliore esperienza utente e capire come viene utilizzato il sito, potremmo utilizzare i cookie. Questi cookie vengono utilizzati per ricordare le preferenze dell'utente e analizzare il traffico del sito. Puoi modificare le impostazioni dei cookie nel tuo browser."
+          title: "2. Cookie-ების გამოყენება",
+          text: "კარგი მომხმარებლის გამოცდილებისა და საიტის გამოყენების გაგებისთვის, ჩვენ შეიძლება გამოვიყენოთ Cookie-ები. ეს Cookie-ები გამოიყენება მომხმარებლის უპირატესობების დასამახსოვრებლად და საიტის ტრაფიკის ანალიზისთვის. შეგიძლიათ მოირგოთ Cookie-ების პარამეტრები თქვენს ბრაუზერში."
         },
         {
-          title: "3. Link di terze parti",
-          text: "Questo sito può contenere link a siti di terze parti (es. Google Maps). Non siamo responsabili per le pratiche sulla privacy di questi siti esterni. Ti invitiamo a leggere le dichiarazioni sulla privacy di ogni sito che raccoglie informazioni personali quando lasci il nostro sito."
+          title: "3. მესამე მხარის ბმულები",
+          text: "ეს საიტი შეიძლება შეიცავდეს ბმულებს მესამე მხარის საიტებზე (მაგალითად, Google Maps). ჩვენ არ ვართ პასუხისმგებელი ამ გარე საიტების კონფიდენციალურობის პრაქტიკაზე. გირჩევთ, წაიკითხოთ კონფიდენციალურობის განცხადებები ნებისმიერი საიტისთვის, რომელიც აგროვებს პერსონალურ ინფორმაციას, როდესაც ტოვებთ ჩვენს საიტს."
         },
         {
-          title: "4. Contattaci",
-          text: "Se hai domande o dubbi su questa informativa sulla privacy, ti preghiamo di contattarci a: claritleonelmnicol@gmail.com"
+          title: "4. დაგვიკავშირდით",
+          text: "თუ გაქვთ რაიმე კითხვები ან შეშფოთება ამ კონფიდენციალურობის პოლიტიკასთან დაკავშირებით, გთხოვთ, დაგვიკავშირდეთ: n20186005@gmail.com"
         }
       ],
-      backHome: "Torna alla home"
+      backHome: "მთავარ გვერდზე დაბრუნება"
     }
   };
 

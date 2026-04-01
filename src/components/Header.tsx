@@ -26,7 +26,7 @@ export default function Header() {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="text-lg font-semibold tracking-tight" style={{ color: scrolled ? 'var(--text-primary)' : '#fff' }}>
-          Piazza del Popolo
+          Chronicles of Georgia
         </a>
         <nav className="hidden md:flex items-center gap-6 text-sm" style={{ color: scrolled ? 'var(--text-secondary)' : 'rgba(255,255,255,0.85)' }}>
           <a href="#intro" className="hover:opacity-70 transition-opacity">{t('home')}</a>
