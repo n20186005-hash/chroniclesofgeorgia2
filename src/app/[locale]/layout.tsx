@@ -20,22 +20,23 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const messages = await getMessages();
   const meta = (messages as Record<string, Record<string, string>>).meta;
 
-  const baseUrl = 'https://www.piazzapopoloascoli.com';
+  const baseUrl = 'https://www.chroniclesofgeorgia.com';
   
   // Base alternate languages for the home page (or base path)
   const alternateLanguages: Record<string, string> = {
-    'it': `${baseUrl}/it`,
+    'ka': `${baseUrl}`,
     'en': `${baseUrl}/en`,
-    'fr': `${baseUrl}/fr`,
+    'ru': `${baseUrl}/ru`,
     'zh-Hant': `${baseUrl}/zh-hant`,
-    'x-default': `${baseUrl}/en`,
+    'zh-CN': `${baseUrl}/zh-cn`,
+    'x-default': `${baseUrl}`,
   };
 
   const canonicalUrl = locale === defaultLocale ? baseUrl : `${baseUrl}/${locale}`;
 
   return {
-    title: meta?.title || 'Piazza del Popolo, Ascoli Piceno',
-    description: meta?.description || 'Guida turistica indipendente',
+    title: meta?.title || 'Chronicles of Georgia - საქართველოს მატიანე',
+    description: meta?.description || 'Independent tourism guide to the Chronicles of Georgia monument.',
     metadataBase: new URL(baseUrl),
     alternates: {
       canonical: canonicalUrl,
@@ -62,7 +63,7 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale === 'zh-hant' ? 'zh-Hant' : locale} suppressHydrationWarning>
+    <html lang={locale === 'zh-hant' ? 'zh-Hant' : locale === 'zh-cn' ? 'zh-CN' : locale} suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <Script

@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { locales, defaultLocale } from '@/i18n/config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.piazzapopoloascoli.com';
+  const baseUrl = 'https://www.chroniclesofgeorgia.com';
 
   // Core routes
   const routes = [
