@@ -57,7 +57,7 @@ export default function Hero() {
 
         {/* Google Maps link */}
         <a
-          href="https://maps.app.goo.gl/ZzzAahVcrVHDG3ug6"
+          href="https://maps.app.goo.gl/Q8VeC3SXTQesCfe48"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium hover:bg-white/30 transition-colors mb-8 animate-fade-in-up animate-delay-3"

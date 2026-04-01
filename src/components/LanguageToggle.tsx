@@ -5,10 +5,11 @@ import { useState, useRef, useEffect } from 'react';
 import { locales } from '@/i18n/config';
 
 const localeNames: Record<string, string> = {
-  'it': 'Italiano',
+  'ka': 'ქართული',
   'en': 'English',
-  'fr': 'Français',
+  'ru': 'Русский',
   'zh-hant': '繁體中文',
+  'zh-cn': '简体中文',
 };
 
 export default function LanguageToggle() {
@@ -37,7 +38,7 @@ export default function LanguageToggle() {
         break;
       }
     }
-    const newPath = newLocale === 'it' ? path : `/${newLocale}${path}`;
+    const newPath = newLocale === 'ka' ? path : `/${newLocale}${path}`;
     router.push(newPath);
     setIsOpen(false);
   };

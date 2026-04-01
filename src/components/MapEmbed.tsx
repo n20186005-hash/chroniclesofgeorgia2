@@ -19,7 +19,7 @@ export default function MapEmbed() {
 
         <div className="map-container rounded-xl overflow-hidden" style={{ border: '1px solid var(--border-color)' }}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.8702700992676!2d13.57296797701293!3d42.85447237115122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1331fd11b4d4b447%3A0x4c5d14fff6ec287b!2sPiazza%20del%20Popolo%2C%20Ascoli%20Piceno%2C%20AP!5e0!3m2!1sen!2sus!4v1774421641697!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2975.6772256212907!2d44.807844576972414!3d41.770616471253724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446d0a119ef399%3A0x377e1f1f0dbe5cb!2sChronicles%20of%20Georgia!5e0!3m2!1sen!2sus!4v1774967172773!5m2!1sen!2sus"
             width="100%"
             height="450"
             style={{ border: 0 }}
@@ -31,7 +31,7 @@ export default function MapEmbed() {
 
         <div className="mt-6 text-center">
           <a
-            href="https://maps.app.goo.gl/ZzzAahVcrVHDG3ug6"
+            href="https://maps.app.goo.gl/Q8VeC3SXTQesCfe48"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-colors"
