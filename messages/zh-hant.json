@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "Piazza del Popolo，阿斯科利皮切諾 - 旅遊指南",
+    "description": "Piazza del Popolo 獨立旅遊指南，阿斯科利皮切諾的文藝復興之心。探索歷史、建築、評論及參觀建議。"
+  },
+  "nav": {
+    "home": "首頁",
+    "gallery": "相簿",
+    "reviews": "評論",
+    "guide": "導覽",
+    "map": "地圖",
+    "privacy": "隱私政策",
+    "terms": "服務條款",
+    "cookies": "Cookie 設定"
+  },
+  "hero": {
+    "title": "Piazza del Popolo",
+    "subtitle": "阿斯科利皮切諾的文藝復興客廳",
+    "rating": "4.7/5",
+    "ratingCount": "（16,016 則評論）",
+    "openHours": "全天候開放",
+    "openMaps": "在 Google 地圖中開啟",
+    "keywords": ["廣場", "文藝復興", "石灰華", "Caffè Meletti", "Palazzo dei Capitani", "Loggia dei Mercanti", "拱廊"]
+  },
+  "intro": {
+    "title": "探索廣場",
+    "description": "Piazza del Popolo 是阿斯科利皮切諾的跳動心臟，也是義大利最優雅的廣場之一。廣場全面鋪設石灰華石材，四周環繞著和諧的文藝復興建築與拱廊。",
+    "highlights": [
+      "全面鋪設當地石灰華石材",
+      "Palazzo dei Capitani del Popolo（十三世紀）",
+      "歷史悠久的 Caffè Meletti，新藝術風格瑰寶",
+      "十六世紀的 Loggia dei Mercanti",
+      "三面優雅的拱廊"
+    ]
+  },
+  "gallery": {
+    "title": "攝影相簿",
+    "photos": [
+      {"caption": "日落時分的廣場全景"},
+      {"caption": "Palazzo dei Capitani del Popolo"},
+      {"caption": "Caffè Meletti - 新藝術風格內裝"},
+      {"caption": "文藝復興拱廊"},
+      {"caption": "石灰華石材鋪面"},
+      {"caption": "Loggia dei Mercanti"}
+    ]
+  },
+  "reviews": {
+    "title": "真實遊客評論",
+    "declaration": "評分與評論來自 Google 地圖（最後更新：2026 年）。我們僅展示精選的高分驗證評論。如需查看所有完整及最新評論，請點擊下方連結。",
+    "moreLink": "在 Google 地圖上查看所有評論",
+    "items": [
+      {"name": "Marco R.", "date": "2026年3月", "stars": 5, "text": "義大利最美的廣場之一。日落時分的氛圍如夢似幻，拱廊在燈光中閃耀，石灰華染上了金色光芒。"},
+      {"name": "Giulia S.", "date": "2026年2月", "stars": 5, "text": "美妙絕倫的廣場！Caffè Meletti 是必訪之地，一定要品嚐茴香酒。文藝復興建築保存得非常完好。"},
+      {"name": "Thomas K.", "date": "2026年1月", "stars": 5, "text": "難以置信這座廣場在義大利以外竟如此鮮為人知。它完全可以與最著名的廣場相媲美。"},
+      {"name": "Yuki T.", "date": "2025年12月", "stars": 5, "text": "白色石灰華讓一切顯得明亮而優雅。拱廊能遮陽擋雨，任何季節都很完美。"},
+      {"name": "Alessandro M.", "date": "2025年11月", "stars": 4, "text": "美麗的廣場，是當地居民聚會的場所。八月的 Quintana 節慶將廣場變成中世紀的舞台。"},
+      {"name": "Sophie L.", "date": "2025年10月", "stars": 5, "text": "我們花了好幾個小時坐在露天座位欣賞建築。Palazzo dei Capitani 氣勢宏偉，市政塔樓俯瞰整個廣場。"},
+      {"name": "Hans W.", "date": "2025年9月", "stars": 5, "text": "這座廣場是建築和諧的傑作。每棟建築都與周圍完美融合，絕對值得一訪。"},
+      {"name": "Chiara B.", "date": "2025年8月", "stars": 5, "text": "Quintana 節慶期間，廣場充滿中世紀的繽紛色彩。但即使在平常日子，這裡也是寧靜而美麗非凡的所在。"}
+    ]
+  },
+  "guide": {
+    "title": "參觀指南",
+    "visitDuration": {
+      "title": "需要多少時間？",
+      "text": "參觀廣場大約需要 1 至 2 小時。建議預留額外時間在 Meletti 咖啡館小坐，並探索周圍歷史中心的街道。"
+    },
+    "worthIt": {
+      "title": "值得一遊嗎？",
+      "text": "絕對值得。Piazza del Popolo 被譽為義大利最美的廣場之一，其建築和諧性常被拿來與聖馬可廣場相提並論。"
+    },
+    "whatInside": {
+      "title": "廣場上有什麼？",
+      "items": [
+        "Palazzo dei Capitani del Popolo - 自十三世紀起的市政權力中心",
+        "聖方濟教堂 - 哥德式風格，矗立於廣場西側",
+        "Caffè Meletti - 歷史悠久的新藝術風格咖啡館（始於 1907 年）",
+        "Loggia dei Mercanti - 優雅的十六世紀建築",
+        "拱廊下眾多酒吧與餐廳"
+      ]
+    },
+    "tips": {
+      "title": "實用建議",
+      "items": [
+        "日落時分造訪，石灰華在此時光線最美",
+        "Quintana 節慶（八月第一個星期日）非常壯觀",
+        "在廣場的小餐館品嚐阿斯科利炸橄欖",
+        "歷史中心為行人區，步行遊覽非常方便",
+        "舊城邊緣設有停車場"
+      ]
+    },
+    "comparison": {
+      "title": "與類似廣場的比較",
+      "headers": ["特色", "Piazza del Popolo", "Piazza del Duomo（特倫托）", "聖馬可廣場（威尼斯）"],
+      "rows": [
+        ["年代", "文藝復興", "中世紀-文藝復興", "拜占庭-文藝復興"],
+        ["建材", "石灰華", "當地石材", "伊斯特里亞石"],
+        ["拱廊", "三面", "部分", "三面"],
+        ["入場", "免費 全天候", "免費 全天候", "免費 全天候"],
+        ["擁擠程度", "低", "中等", "非常高"],
+        ["歷史咖啡館", "Caffè Meletti", "多家", "Caffè Florian"]
+      ]
+    }
+  },
+  "map": {
+    "title": "如何前往",
+    "address": "Piazza del Popolo, 63100 Ascoli Piceno AP, 義大利",
+    "openMaps": "在 Google 地圖中開啟"
+  },
+  "sources": {
+    "title": "資料與參考來源",
+    "text": "本網站為獨立第三方旅遊資訊專案。資訊來源包括 Google 地圖、當地旅遊機構及維基百科等公開資料。照片來自 Unsplash。",
+    "disclaimer": "我們與阿斯科利皮切諾市政府或任何官方機構無任何隸屬關係。"
+  },
+  "footer": {
+    "support": "如需本網站技術支援，請聯繫：",
+    "rights": "© 2026 Piazza del Popolo Guide · 版權所有。",
+    "privacy": "隱私政策",
+    "terms": "服務條款",
+    "cookies": "Cookie 設定"
+  },
+  "theme": {
+    "light": "淺色模式",
+    "dark": "深色模式"
+  },
+  "language": {
+    "it": "Italiano",
+    "en": "English",
+    "fr": "Français",
+    "zh-hant": "繁體中文"
+  },
+  "privacy": {
+    "title": "隱私政策",
+    "content": "本網站透過技術性 Cookie 收集最少量的瀏覽資料，以確保網站正常運作。我們不會收集任何可識別個人身份的資料。如有隱私相關問題，請聯繫：claritleonelmnicol@gmail.com"
+  },
+  "terms": {
+    "title": "服務條款",
+    "content": "本網站提供旅遊資訊，僅供參考之用。資訊來自公開來源，可能並非始終為最新資料。使用本網站即表示接受這些條款。如有疑問，請聯繫：claritleonelmnicol@gmail.com"
+  },
+  "cookieSettings": {
+    "title": "Cookie 設定",
+    "content": "本網站僅使用網站運作所必需的技術性 Cookie，以及記住您的語言和主題偏好。我們不使用追蹤型或廣告型 Cookie。"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "Piazza del Popolo, Ascoli Piceno - Tourism Guide",
+    "description": "Independent tourism guide to Piazza del Popolo, the Renaissance heart of Ascoli Piceno. Discover history, architecture, reviews, and tips for your visit."
+  },
+  "nav": {
+    "home": "Home",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "guide": "Guide",
+    "map": "Map",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Settings"
+  },
+  "hero": {
+    "title": "Piazza del Popolo",
+    "subtitle": "The Renaissance drawing room of Ascoli Piceno",
+    "rating": "4.7/5",
+    "ratingCount": "(16,016 reviews)",
+    "openHours": "Open 24/7",
+    "openMaps": "Open in Google Maps",
+    "keywords": ["Square", "Renaissance", "Travertine", "Caffè Meletti", "Palazzo dei Capitani", "Loggia dei Mercanti", "Porticoes"]
+  },
+  "intro": {
+    "title": "Discover the Square",
+    "description": "Piazza del Popolo is the beating heart of Ascoli Piceno, one of the most elegant squares in Italy. Entirely paved in travertine, it is surrounded by Renaissance buildings with harmonious porticoes.",
+    "highlights": [
+      "Entirely clad in local travertine stone",
+      "Palazzo dei Capitani del Popolo (13th century)",
+      "Historic Caffè Meletti, an Art Nouveau gem",
+      "16th-century Loggia dei Mercanti",
+      "Elegant porticoes on three sides"
+    ]
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "photos": [
+      {"caption": "Panoramic view of the square at sunset"},
+      {"caption": "Palazzo dei Capitani del Popolo"},
+      {"caption": "Caffè Meletti - Art Nouveau interior"},
+      {"caption": "Renaissance porticoes"},
+      {"caption": "Travertine paving"},
+      {"caption": "Loggia dei Mercanti"}
+    ]
+  },
+  "reviews": {
+    "title": "Reviews from Real Visitors",
+    "declaration": "Ratings and reviews sourced from Google Maps (last updated: 2026). We only display a selection of verified high-scoring reviews. For all complete and most recent reviews, click the link below.",
+    "moreLink": "See all reviews on Google Maps",
+    "items": [
+      {"name": "Marco R.", "date": "March 2026", "stars": 5, "text": "One of the most beautiful squares in Italy. The atmosphere at sunset is magical, with the illuminated porticoes and the travertine turning golden."},
+      {"name": "Giulia S.", "date": "February 2026", "stars": 5, "text": "Wonderful square! Caffè Meletti is a must-visit — try the anisetta. The Renaissance architecture is perfectly preserved."},
+      {"name": "Thomas K.", "date": "January 2026", "stars": 5, "text": "Incredible that this square is so little known outside Italy. It easily rivals the most famous piazzas."},
+      {"name": "Yuki T.", "date": "December 2025", "stars": 5, "text": "The white travertine makes everything bright and elegant. The porticoes offer shelter from both sun and rain. Perfect in every season."},
+      {"name": "Alessandro M.", "date": "November 2025", "stars": 4, "text": "Beautiful square, a gathering point for all locals. The Quintana festival in August transforms the piazza into a medieval stage."},
+      {"name": "Sophie L.", "date": "October 2025", "stars": 5, "text": "We spent hours sitting at the outdoor tables admiring the architecture. Palazzo dei Capitani is imposing, and the civic tower dominates the square."},
+      {"name": "Hans W.", "date": "September 2025", "stars": 5, "text": "This square is a masterpiece of architectural harmony. Every building blends perfectly with the others. An absolute must-visit."},
+      {"name": "Chiara B.", "date": "August 2025", "stars": 5, "text": "During the Quintana, the square comes alive with medieval colours. But even on an ordinary day, it is a place of extraordinary peace and beauty."}
+    ]
+  },
+  "guide": {
+    "title": "Visitor Guide",
+    "visitDuration": {
+      "title": "How long does a visit take?",
+      "text": "A visit to the square takes about 1-2 hours. Allow extra time for a coffee at Meletti and to explore the surrounding streets of the historic centre."
+    },
+    "worthIt": {
+      "title": "Is it worth visiting?",
+      "text": "Absolutely. Piazza del Popolo is considered one of the most beautiful squares in Italy, often compared to Piazza San Marco for its architectural harmony."
+    },
+    "whatInside": {
+      "title": "What can you find in the square?",
+      "items": [
+        "Palazzo dei Capitani del Popolo - seat of civic power since the 13th century",
+        "Church of San Francesco - Gothic, dominating the western side",
+        "Caffè Meletti - historic Art Nouveau café (since 1907)",
+        "Loggia dei Mercanti - elegant 16th-century structure",
+        "Numerous bars and restaurants under the porticoes"
+      ]
+    },
+    "tips": {
+      "title": "Practical Tips",
+      "items": [
+        "Visit at sunset for the best light on the travertine",
+        "The Quintana festival (first Sunday of August) is spectacular",
+        "Try olive ascolane at the trattorias in the square",
+        "The historic centre is pedestrianised, easy to explore on foot",
+        "Parking is available on the outskirts of the old town"
+      ]
+    },
+    "comparison": {
+      "title": "Comparison with Similar Squares",
+      "headers": ["Feature", "Piazza del Popolo", "Piazza del Duomo (Trento)", "Piazza San Marco (Venice)"],
+      "rows": [
+        ["Era", "Renaissance", "Medieval-Renaissance", "Byzantine-Renaissance"],
+        ["Material", "Travertine", "Local stone", "Istrian stone"],
+        ["Porticoes", "Three sides", "Partial", "Three sides"],
+        ["Access", "Free 24/7", "Free 24/7", "Free 24/7"],
+        ["Crowding", "Low", "Medium", "Very high"],
+        ["Historic cafés", "Caffè Meletti", "Various", "Caffè Florian"]
+      ]
+    }
+  },
+  "map": {
+    "title": "How to Get There",
+    "address": "Piazza del Popolo, 63100 Ascoli Piceno AP, Italy",
+    "openMaps": "Open in Google Maps"
+  },
+  "sources": {
+    "title": "Data and References",
+    "text": "This website is an independent third-party project for tourism information purposes. Information is sourced from public sources including Google Maps, local tourism authorities, and Wikipedia. Photos are sourced from Unsplash.",
+    "disclaimer": "We are not affiliated with the Municipality of Ascoli Piceno or any other official body."
+  },
+  "footer": {
+    "support": "For technical support regarding this website, contact:",
+    "rights": "© 2026 Piazza del Popolo Guide · All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Settings"
+  },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode"
+  },
+  "language": {
+    "it": "Italiano",
+    "en": "English",
+    "fr": "Français",
+    "zh-hant": "繁體中文"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "content": "This website collects minimal browsing data through technical cookies to ensure the site functions correctly. We do not collect personally identifiable data. For privacy enquiries, contact: claritleonelmnicol@gmail.com"
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "content": "This website provides tourism information for informational purposes. Information is gathered from public sources and may not always be up to date. Use of this website implies acceptance of these terms. For enquiries, contact: claritleonelmnicol@gmail.com"
+  },
+  "cookieSettings": {
+    "title": "Cookie Settings",
+    "content": "This website only uses technical cookies necessary for the site to function and to remember your language and theme preferences. We do not use tracking or advertising cookies."
+  }
+}

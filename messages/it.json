@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "Piazza del Popolo, Ascoli Piceno - Guida Turistica",
+    "description": "Guida turistica indipendente a Piazza del Popolo, il cuore rinascimentale di Ascoli Piceno. Scopri storia, architettura, recensioni e consigli per la visita."
+  },
+  "nav": {
+    "home": "Home",
+    "gallery": "Galleria",
+    "reviews": "Recensioni",
+    "guide": "Guida",
+    "map": "Mappa",
+    "privacy": "Privacy Policy",
+    "terms": "Termini di Servizio",
+    "cookies": "Impostazioni Cookie"
+  },
+  "hero": {
+    "title": "Piazza del Popolo",
+    "subtitle": "Il salotto rinascimentale di Ascoli Piceno",
+    "rating": "4.7/5",
+    "ratingCount": "(16,016 recensioni)",
+    "openHours": "Aperto 24h/24",
+    "openMaps": "Apri in Google Maps",
+    "keywords": ["Piazza", "Rinascimento", "Travertino", "Caffè Meletti", "Palazzo dei Capitani", "Loggia dei Mercanti", "Portici"]
+  },
+  "intro": {
+    "title": "Scopri la Piazza",
+    "description": "Piazza del Popolo è il cuore pulsante di Ascoli Piceno, una delle piazze più eleganti d'Italia. Interamente pavimentata in travertino, è circondata da edifici rinascimentali con portici armoniosi.",
+    "highlights": [
+      "Interamente rivestita in travertino locale",
+      "Palazzo dei Capitani del Popolo (XIII secolo)",
+      "Storico Caffè Meletti, gioiello Art Nouveau",
+      "Loggia dei Mercanti del XVI secolo",
+      "Portici eleganti su tre lati"
+    ]
+  },
+  "gallery": {
+    "title": "Galleria Fotografica",
+    "photos": [
+      {"caption": "Vista panoramica della piazza al tramonto"},
+      {"caption": "Palazzo dei Capitani del Popolo"},
+      {"caption": "Caffè Meletti - interno Art Nouveau"},
+      {"caption": "Portici rinascimentali"},
+      {"caption": "Pavimentazione in travertino"},
+      {"caption": "Loggia dei Mercanti"}
+    ]
+  },
+  "reviews": {
+    "title": "Recensioni di Visitatori Reali",
+    "declaration": "Valutazioni e recensioni provenienti da Google Maps (ultimo aggiornamento: 2026). Mostriamo solo una selezione di recensioni verificate ad alto punteggio. Per tutte le recensioni complete e più recenti, clicca il link sottostante.",
+    "moreLink": "Vedi tutte le recensioni su Google Maps",
+    "items": [
+      {"name": "Marco R.", "date": "Marzo 2026", "stars": 5, "text": "Una delle piazze più belle d'Italia. L'atmosfera al tramonto è magica, con i portici illuminati e il travertino che diventa dorato."},
+      {"name": "Giulia S.", "date": "Febbraio 2026", "stars": 5, "text": "Piazza meravigliosa! Il Caffè Meletti è un must, prendete l'anisetta. Architettura rinascimentale perfettamente conservata."},
+      {"name": "Thomas K.", "date": "Gennaio 2026", "stars": 5, "text": "Incredibile come questa piazza sia così poco conosciuta fuori dall'Italia. Rivaleggia facilmente con le piazze più famose."},
+      {"name": "Yuki T.", "date": "Dicembre 2025", "stars": 5, "text": "Il travertino bianco rende tutto luminoso e elegante. I portici offrono riparo dal sole e dalla pioggia. Perfetta in ogni stagione."},
+      {"name": "Alessandro M.", "date": "Novembre 2025", "stars": 4, "text": "Bellissima piazza, punto di ritrovo per tutti gli ascolani. La Quintana di agosto trasforma la piazza in un palcoscenico medievale."},
+      {"name": "Sophie L.", "date": "Ottobre 2025", "stars": 5, "text": "Abbiamo passato ore seduti ai tavolini ammirando l'architettura. Il Palazzo dei Capitani è imponente, la torre civica domina la piazza."},
+      {"name": "Hans W.", "date": "Settembre 2025", "stars": 5, "text": "Questa piazza è un capolavoro di armonia architettonica. Ogni edificio si integra perfettamente con gli altri. Da visitare assolutamente."},
+      {"name": "Chiara B.", "date": "Agosto 2025", "stars": 5, "text": "Durante la Quintana la piazza si anima di colori medievali. Ma anche in un giorno qualunque è un luogo di pace e bellezza straordinaria."}
+    ]
+  },
+  "guide": {
+    "title": "Guida alla Visita",
+    "visitDuration": {
+      "title": "Quanto tempo serve?",
+      "text": "Una visita alla piazza richiede circa 1-2 ore. Aggiungete tempo per un caffè al Meletti e per esplorare le vie circostanti del centro storico."
+    },
+    "worthIt": {
+      "title": "Vale la pena visitarla?",
+      "text": "Assolutamente sì. Piazza del Popolo è considerata una delle piazze più belle d'Italia, spesso paragonata a Piazza San Marco per l'armonia architettonica."
+    },
+    "whatInside": {
+      "title": "Cosa si trova nella piazza?",
+      "items": [
+        "Palazzo dei Capitani del Popolo - sede del potere civico dal XIII secolo",
+        "Chiesa di San Francesco - gotica, domina il lato ovest",
+        "Caffè Meletti - storico bar Art Nouveau (dal 1907)",
+        "Loggia dei Mercanti - elegante struttura del XVI secolo",
+        "Numerosi bar e ristoranti sotto i portici"
+      ]
+    },
+    "tips": {
+      "title": "Consigli Pratici",
+      "items": [
+        "Visitate al tramonto per la luce migliore sul travertino",
+        "La Quintana (prima domenica di agosto) è spettacolare",
+        "Provate le olive ascolane nelle trattorie della piazza",
+        "Il centro storico è pedonale, comodo da esplorare a piedi",
+        "Parcheggi disponibili ai margini del centro storico"
+      ]
+    },
+    "comparison": {
+      "title": "Confronto con Piazze Simili",
+      "headers": ["Caratteristica", "Piazza del Popolo", "Piazza del Duomo (Trento)", "Piazza San Marco (Venezia)"],
+      "rows": [
+        ["Epoca", "Rinascimentale", "Medievale-Rinascimentale", "Bizantina-Rinascimentale"],
+        ["Materiale", "Travertino", "Pietra locale", "Pietra d'Istria"],
+        ["Portici", "Tre lati", "Parziali", "Tre lati"],
+        ["Accesso", "Gratuito 24/7", "Gratuito 24/7", "Gratuito 24/7"],
+        ["Affollamento", "Basso", "Medio", "Molto alto"],
+        ["Bar storici", "Caffè Meletti", "Vari", "Caffè Florian"]
+      ]
+    }
+  },
+  "map": {
+    "title": "Come Arrivare",
+    "address": "Piazza del Popolo, 63100 Ascoli Piceno AP, Italia",
+    "openMaps": "Apri in Google Maps"
+  },
+  "sources": {
+    "title": "Dati e Riferimenti",
+    "text": "Questo sito è un progetto indipendente di terze parti a scopo informativo turistico. Le informazioni provengono da fonti pubbliche tra cui Google Maps, enti turistici locali e Wikipedia. Le foto provengono da Unsplash.",
+    "disclaimer": "Non siamo affiliati con il Comune di Ascoli Piceno o altri enti ufficiali."
+  },
+  "footer": {
+    "support": "Per supporto tecnico su questo sito, contattare:",
+    "rights": "© 2026 Piazza del Popolo Guide · Tutti i diritti riservati.",
+    "privacy": "Privacy Policy",
+    "terms": "Termini di Servizio",
+    "cookies": "Impostazioni Cookie"
+  },
+  "theme": {
+    "light": "Modalità chiara",
+    "dark": "Modalità scura"
+  },
+  "language": {
+    "it": "Italiano",
+    "en": "English",
+    "fr": "Français",
+    "zh-hant": "繁體中文"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "content": "Questo sito raccoglie dati minimi di navigazione tramite cookie tecnici per garantire il funzionamento del sito. Non raccogliamo dati personali identificabili. Per domande sulla privacy, contattare: claritleonelmnicol@gmail.com"
+  },
+  "terms": {
+    "title": "Termini di Servizio",
+    "content": "Questo sito fornisce informazioni turistiche a scopo informativo. Le informazioni sono raccolte da fonti pubbliche e potrebbero non essere sempre aggiornate. L'utilizzo del sito implica l'accettazione di questi termini. Per domande, contattare: claritleonelmnicol@gmail.com"
+  },
+  "cookieSettings": {
+    "title": "Impostazioni Cookie",
+    "content": "Questo sito utilizza solo cookie tecnici necessari per il funzionamento del sito e per ricordare le preferenze di lingua e tema. Non utilizziamo cookie di tracciamento o pubblicitari."
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "title": "Piazza del Popolo, Ascoli Piceno - Guide Touristique",
+    "description": "Guide touristique indépendante de la Piazza del Popolo, le cœur Renaissance d'Ascoli Piceno. Découvrez son histoire, son architecture, les avis et les conseils pour votre visite."
+  },
+  "nav": {
+    "home": "Accueil",
+    "gallery": "Galerie",
+    "reviews": "Avis",
+    "guide": "Guide",
+    "map": "Carte",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "cookies": "Paramètres des cookies"
+  },
+  "hero": {
+    "title": "Piazza del Popolo",
+    "subtitle": "Le salon Renaissance d'Ascoli Piceno",
+    "rating": "4.7/5",
+    "ratingCount": "(16 016 avis)",
+    "openHours": "Ouvert 24h/24",
+    "openMaps": "Ouvrir dans Google Maps",
+    "keywords": ["Place", "Renaissance", "Travertin", "Caffè Meletti", "Palazzo dei Capitani", "Loggia dei Mercanti", "Portiques"]
+  },
+  "intro": {
+    "title": "Découvrez la Place",
+    "description": "La Piazza del Popolo est le cœur battant d'Ascoli Piceno, l'une des places les plus élégantes d'Italie. Entièrement pavée de travertin, elle est entourée d'édifices Renaissance aux portiques harmonieux.",
+    "highlights": [
+      "Entièrement revêtue de travertin local",
+      "Palazzo dei Capitani del Popolo (XIIIe siècle)",
+      "Historique Caffè Meletti, joyau Art Nouveau",
+      "Loggia dei Mercanti du XVIe siècle",
+      "Portiques élégants sur trois côtés"
+    ]
+  },
+  "gallery": {
+    "title": "Galerie Photos",
+    "photos": [
+      {"caption": "Vue panoramique de la place au coucher du soleil"},
+      {"caption": "Palazzo dei Capitani del Popolo"},
+      {"caption": "Caffè Meletti - intérieur Art Nouveau"},
+      {"caption": "Portiques Renaissance"},
+      {"caption": "Pavage en travertin"},
+      {"caption": "Loggia dei Mercanti"}
+    ]
+  },
+  "reviews": {
+    "title": "Avis de Visiteurs Réels",
+    "declaration": "Notes et avis provenant de Google Maps (dernière mise à jour : 2026). Nous n'affichons qu'une sélection d'avis vérifiés à score élevé. Pour consulter tous les avis complets et les plus récents, cliquez sur le lien ci-dessous.",
+    "moreLink": "Voir tous les avis sur Google Maps",
+    "items": [
+      {"name": "Marco R.", "date": "Mars 2026", "stars": 5, "text": "L'une des plus belles places d'Italie. L'atmosphère au coucher du soleil est magique, avec les portiques illuminés et le travertin qui devient doré."},
+      {"name": "Giulia S.", "date": "Février 2026", "stars": 5, "text": "Place merveilleuse ! Le Caffè Meletti est incontournable — goûtez l'anisette. L'architecture Renaissance est parfaitement conservée."},
+      {"name": "Thomas K.", "date": "Janvier 2026", "stars": 5, "text": "Incroyable que cette place soit si peu connue en dehors de l'Italie. Elle rivalise aisément avec les places les plus célèbres."},
+      {"name": "Yuki T.", "date": "Décembre 2025", "stars": 5, "text": "Le travertin blanc rend tout lumineux et élégant. Les portiques offrent un abri contre le soleil et la pluie. Parfaite en toute saison."},
+      {"name": "Alessandro M.", "date": "Novembre 2025", "stars": 4, "text": "Très belle place, lieu de rendez-vous de tous les habitants. La Quintana en août transforme la place en une scène médiévale."},
+      {"name": "Sophie L.", "date": "Octobre 2025", "stars": 5, "text": "Nous avons passé des heures assis aux terrasses à admirer l'architecture. Le Palazzo dei Capitani est imposant, la tour civique domine la place."},
+      {"name": "Hans W.", "date": "Septembre 2025", "stars": 5, "text": "Cette place est un chef-d'œuvre d'harmonie architecturale. Chaque bâtiment s'intègre parfaitement aux autres. À visiter absolument."},
+      {"name": "Chiara B.", "date": "Août 2025", "stars": 5, "text": "Pendant la Quintana, la place s'anime de couleurs médiévales. Mais même un jour ordinaire, c'est un lieu de paix et de beauté extraordinaire."}
+    ]
+  },
+  "guide": {
+    "title": "Guide de Visite",
+    "visitDuration": {
+      "title": "Combien de temps faut-il ?",
+      "text": "Une visite de la place nécessite environ 1 à 2 heures. Prévoyez du temps supplémentaire pour un café au Meletti et pour explorer les rues environnantes du centre historique."
+    },
+    "worthIt": {
+      "title": "Cela vaut-il le détour ?",
+      "text": "Absolument. La Piazza del Popolo est considérée comme l'une des plus belles places d'Italie, souvent comparée à la Piazza San Marco pour son harmonie architecturale."
+    },
+    "whatInside": {
+      "title": "Que trouve-t-on sur la place ?",
+      "items": [
+        "Palazzo dei Capitani del Popolo - siège du pouvoir civique depuis le XIIIe siècle",
+        "Église San Francesco - gothique, dominant le côté ouest",
+        "Caffè Meletti - café historique Art Nouveau (depuis 1907)",
+        "Loggia dei Mercanti - élégante structure du XVIe siècle",
+        "Nombreux bars et restaurants sous les portiques"
+      ]
+    },
+    "tips": {
+      "title": "Conseils Pratiques",
+      "items": [
+        "Visitez au coucher du soleil pour la plus belle lumière sur le travertin",
+        "La Quintana (premier dimanche d'août) est spectaculaire",
+        "Goûtez les olive ascolane dans les trattorias de la place",
+        "Le centre historique est piétonnier, facile à explorer à pied",
+        "Des parkings sont disponibles en périphérie du centre historique"
+      ]
+    },
+    "comparison": {
+      "title": "Comparaison avec des Places Similaires",
+      "headers": ["Caractéristique", "Piazza del Popolo", "Piazza del Duomo (Trente)", "Piazza San Marco (Venise)"],
+      "rows": [
+        ["Époque", "Renaissance", "Médiévale-Renaissance", "Byzantine-Renaissance"],
+        ["Matériau", "Travertin", "Pierre locale", "Pierre d'Istrie"],
+        ["Portiques", "Trois côtés", "Partiels", "Trois côtés"],
+        ["Accès", "Gratuit 24h/24", "Gratuit 24h/24", "Gratuit 24h/24"],
+        ["Affluence", "Faible", "Moyenne", "Très élevée"],
+        ["Cafés historiques", "Caffè Meletti", "Divers", "Caffè Florian"]
+      ]
+    }
+  },
+  "map": {
+    "title": "Comment s'y Rendre",
+    "address": "Piazza del Popolo, 63100 Ascoli Piceno AP, Italie",
+    "openMaps": "Ouvrir dans Google Maps"
+  },
+  "sources": {
+    "title": "Données et Références",
+    "text": "Ce site est un projet indépendant de tiers à but d'information touristique. Les informations proviennent de sources publiques, notamment Google Maps, les offices de tourisme locaux et Wikipédia. Les photos proviennent d'Unsplash.",
+    "disclaimer": "Nous ne sommes pas affiliés à la Municipalité d'Ascoli Piceno ni à aucun organisme officiel."
+  },
+  "footer": {
+    "support": "Pour le support technique de ce site, contactez :",
+    "rights": "© 2026 Piazza del Popolo Guide · Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation",
+    "cookies": "Paramètres des cookies"
+  },
+  "theme": {
+    "light": "Mode clair",
+    "dark": "Mode sombre"
+  },
+  "language": {
+    "it": "Italiano",
+    "en": "English",
+    "fr": "Français",
+    "zh-hant": "繁體中文"
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "content": "Ce site collecte un minimum de données de navigation via des cookies techniques pour assurer le bon fonctionnement du site. Nous ne collectons aucune donnée personnelle identifiable. Pour toute question relative à la confidentialité, contactez : claritleonelmnicol@gmail.com"
+  },
+  "terms": {
+    "title": "Conditions d'Utilisation",
+    "content": "Ce site fournit des informations touristiques à titre informatif. Les informations sont collectées à partir de sources publiques et peuvent ne pas toujours être à jour. L'utilisation du site implique l'acceptation de ces conditions. Pour toute question, contactez : claritleonelmnicol@gmail.com"
+  },
+  "cookieSettings": {
+    "title": "Paramètres des Cookies",
+    "content": "Ce site utilise uniquement des cookies techniques nécessaires au fonctionnement du site et pour mémoriser vos préférences de langue et de thème. Nous n'utilisons pas de cookies de suivi ni de cookies publicitaires."
+  }
+}
