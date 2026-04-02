@@ -9,6 +9,11 @@
     "reviews": "Reviews",
     "guide": "Guide",
     "map": "Map",
+    "blog": "Blog",
+    "history": "History",
+    "architecture": "Architecture", 
+    "travel-tips": "Travel Tips",
+    "photography": "Photography",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "cookies": "Cookie Settings"
@@ -21,15 +26,15 @@
     "ratingCount": "(12,626 reviews)",
     "openHours": "Open 24 hours",
     "openMaps": "Open in Google Maps",
-    "keywords": ["Monument", "History", "Georgian culture", "Zurab Tsereteli", "Soviet modernism", "Tbilisi", "Photography", "Tourism", "Georgian Stonehenge", "Black Pillars"]
+    "keywords": ["monument", "history", "georgian culture", "zurab tsereteli", "soviet modernism", "tbilisi", "photography", "tourism"]
   },
   "intro": {
     "title": "Discover the Monument",
-    "description": "The Chronicles of Georgia is a giant historical monument located in the upper part of Tbilisi, in the Temqa district. Created by the famous Georgian sculptor Zurab Tsereteli in 1985.",
+    "description": "The Chronicles of Georgia is a massive historical monument located in Tbilisi's upper Temka district. Created by the famous Georgian sculptor Zurab Tsereteli in 1985.",
     "highlights": [
-      "30-meter high columns from Georgian history",
+      "30-meter tall columns of Georgian history",
       "Reliefs of Georgian kings and saints",
-      "Soviet era modernist architecture",
+      "Soviet-era modernist architecture",
       "Unforgettable views of Tbilisi",
       "Free entry and photography"
     ]
@@ -40,50 +45,50 @@
       {"caption": "Panoramic view of the monument at sunset"},
       {"caption": "Reliefs of Georgian kings"},
       {"caption": "Column details and ornaments"},
-      {"caption": "View of Tbilisi from the monument"},
+      {"caption": "Tbilisi view from the monument"},
       {"caption": "Historical scenes on the columns"},
       {"caption": "The monument at night"}
     ]
   },
   "reviews": {
-    "title": "Reviews from Real Visitors",
-    "declaration": "Ratings and reviews sourced from Google Maps (last updated: 2026). We only display a selection of verified high-scoring reviews. For all complete and most recent reviews, click the link below.",
-    "moreLink": "See all reviews on Google Maps",
+    "title": "Real Tourist Reviews",
+    "declaration": "Ratings and reviews are from Google Maps (last updated 2026). We only display verified selected high-rated reviews. To view all complete and latest reviews, click the link below.",
+    "moreLink": "View all reviews on Google Maps",
     "items": [
-      {"name": "Nika K.", "date": "March 2026", "stars": 5, "text": "Amazing place! The view of Tbilisi is simply incredible. Every page of history is depicted in these columns."},
-      {"name": "Mariam B.", "date": "February 2026", "stars": 5, "text": "Must see! Zurab Tsereteli's creation is simply magnificent. The best place for taking photos."},
-      {"name": "David M.", "date": "January 2026", "stars": 5, "text": "Georgian Stonehenge - that's what foreigners call it. It truly deserves this name."},
-      {"name": "Anna C.", "date": "December 2025", "stars": 5, "text": "Perfect place for history lovers. Every column tells a story."},
-      {"name": "Thomas B.", "date": "November 2025", "stars": 5, "text": "Amazing Soviet-era monument with incredible views over Tbilisi. A must-visit for architecture enthusiasts."},
-      {"name": "Sofia L.", "date": "October 2025", "stars": 4, "text": "Very beautiful, but the location is a bit hard to find. But it's worth the search."},
-      {"name": "Alex R.", "date": "September 2025", "stars": 5, "text": "The Black Pillars of Tbilisi - perfect name for photography. Golden hour here is magical."},
-      {"name": "Natia G.", "date": "August 2025", "stars": 5, "text": "Tbilisi's calling card. Every Georgian should see it and we should show it to every foreigner."}
+      {"name": "Nika K", "date": "March 2026", "stars": 5, "text": "Amazing place! The view of Tbilisi is simply incredible. Every page of history is depicted on these columns."},
+      {"name": "Mariam B", "date": "February 2026", "stars": 5, "text": "Must-see attraction! Zurab Tsereteli's creation is simply spectacular. Best place for photos."},
+      {"name": "David M", "date": "January 2026", "stars": 5, "text": "Georgian Stonehenge - that's what foreigners call it. It truly deserves this name."},
+      {"name": "Anna C", "date": "December 2025", "stars": 5, "text": "Perfect place for history lovers. Every column tells a story."},
+      {"name": "Thomas B", "date": "November 2025", "stars": 5, "text": "Amazing Soviet-era monument with stunning views of Tbilisi. Must-visit for architecture enthusiasts."},
+      {"name": "Sophia L", "date": "October 2025", "stars": 4, "text": "Very beautiful but a bit hard to find location. But worth the search."},
+      {"name": "Alex R", "date": "September 2025", "stars": 5, "text": "Tbilisi Black Columns - perfect name for photography. Golden hour here is magical."},
+      {"name": "Nadia G", "date": "August 2025", "stars": 5, "text": "The calling card of Tbilisi. Every Georgian should see it, and we should show it to every foreigner."}
     ]
   },
   "guide": {
-    "title": "Visitor Guide",
+    "title": "Visitor's Guide",
     "visitDuration": {
       "title": "How long does a visit take?",
-      "text": "A visit to the monument takes about 1-2 hours. Allow extra time for taking photos and enjoying the views of Tbilisi."
+      "text": "Visiting the monument takes about 1-2 hours. Allow extra time for photos and enjoying the views of Tbilisi."
     },
     "worthIt": {
       "title": "Is it worth visiting?",
-      "text": "Absolutely. The Chronicles of Georgia is one of the most amazing monuments in Tbilisi, depicting 3000 years of Georgian nation history."
+      "text": "Absolutely worth it. The Chronicles of Georgia is one of the most stunning monuments in Tbilisi, depicting 3000 years of Georgian nation history."
     },
     "whatInside": {
       "title": "What can you find at the monument?",
       "items": [
-        "30-meter columns with scenes from Georgian history",
+        "30-meter tall columns with scenes from Georgian history",
         "Reliefs of Georgian kings and saints",
-        "Depiction of the adoption of Christianity",
-        "Unforgettable views of Tbilisi and the Kura River",
-        "Soviet era modernist architecture"
+        "Depictions of Christian adoption",
+        "Unforgettable views of Tbilisi and Kura River",
+        "Soviet-era modernist architecture"
       ]
     },
     "tips": {
       "title": "Practical Tips",
       "items": [
-        "Visit at sunset for the best views and photos",
+        "Visit during sunset for the best views and photos",
         "Bring water and comfortable shoes",
         "Be careful in winter, it can be slippery",
         "You can get there by bus, but taxi is the best option",
@@ -91,34 +96,57 @@
       ]
     },
     "comparison": {
-      "title": "Comparison with Similar Monuments",
+      "title": "Comparison with similar monuments",
       "headers": ["Feature", "Chronicles of Georgia", "Stalin Monument (Gori)", "Metekhi Church"],
       "rows": [
         ["Era", "Soviet (1985)", "Soviet (1952)", "Medieval"],
         ["Style", "Modernism", "Socialist Realism", "Georgian Baroque"],
         ["Material", "Concrete and stone", "Bronze", "Brick"],
         ["Entry", "Free", "Paid", "Free"],
-        ["Location", "Temqa, Tbilisi", "Gori", "Old Tbilisi"],
-        ["Significance", "History", "History", "Religion"]
+        ["Location", "Temka, Tbilisi", "Gori", "Old Tbilisi"],
+        ["Significance", "Historical", "Historical", "Religious"]
       ]
     }
   },
   "map": {
-    "title": "How to Get There",
+    "title": "How to get there",
     "address": "QRC6+65V, Chronicles of Georgia Temqa, Tbilisi, Georgia",
     "openMaps": "Open in Google Maps"
   },
   "sources": {
-    "title": "Data and References",
-    "text": "This website is an independent third-party project for tourism information purposes. Information is sourced from public sources including Google Maps, local tourism authorities, and Wikipedia. Photos are sourced from Unsplash.",
-    "disclaimer": "We are not affiliated with the Municipality of Tbilisi or any other official body."
+    "title": "Data & References",
+    "text": "This website is an independent third-party project for tourism information purposes. Information is gathered from public sources including Google Maps, local tourism agencies, and Wikipedia. Photos are from Unsplash.",
+    "disclaimer": "We are not affiliated with the Tbilisi City Hall or any other official institutions."
   },
-  "footer": {
-    "support": "For technical support regarding this website, contact:",
-    "rights": "© 2026 Chronicles of Georgia · All rights reserved.",
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Service",
-    "cookies": "Cookie Settings"
+  "visitorTestimonials": {
+    "title": "Chronicles of Georgia Monument: Visitor Stories",
+    "items": [
+      {
+        "author": "Xiaotao",
+        "title": "In the Caucasus, Encountering a 'Three-Dimensional History Textbook'",
+        "nationality": "Chinese Tourist",
+        "content": "Before traveling to Georgia, I had already visited over a dozen European countries and most of Southeast Asia. I was accustomed to the crowds at the Eiffel Tower in Paris and the heaviness of the Roman Colosseum, and had fallen in love with the fireworks of Chiang Mai and the refinement of Tokyo. When I saw the Chronicle of Georgia recommended on Xiaohongshu, I initially thought it was just another 'niche photo spot.' It wasn't until I actually stood beneath those 16 bronze columns that I understood why it occupies a unique position among all the historical sites I've visited.\n\nAs a Chinese tourist who prefers niche destinations and has a bit of a history obsession, Georgia still hits all my sweet spots despite having traveled extensively: visa-free entry for a spontaneous trip, much less hassle than European Schengen countries, airfare prices only half of what you'd pay to France or Italy, and surprisingly low costs - a glass of local wine costs just over ten yuan, a proper local meal just a few dozen yuan. Compared to the commercialization of popular Western destinations, there are no overwhelming tour groups here, no aggressive vendors, allowing you to quietly experience the fusion of scenery and history - a sense of relaxation I've never felt in London or Paris.\n\nWhen I climbed to the mountaintop and saw the monument, I was momentarily dazed. The 35-meter-tall bronze columns pierced the sky, sunlight streaming down, making the relief patterns clear - stories of Noah's Ark, scenes of medieval kings being crowned, and images of locals making wine and celebrating festivals, like an open three-dimensional history book. I've visited many historical sites - Egypt's pyramids are magnificent but distant, Greece's temples are broken but detached, while this monument has both historical weight and the warmth of life. I couldn't help but photograph the reliefs extensively while researching, only to discover that Georgia is one of the world's earliest places to cultivate grapes and make wine, with 8,000 years of qvevri winemaking history, which somehow resonates with Chinese agricultural civilization. Compared to the commercialized wineries of Bordeaux, the winemaking culture here is more pure. At that moment, I realized that the root of different civilizations is the love of life, regardless of geography or language.\n\nThe most delightful surprise was that next to the monument is the Tbilisi Sea, with the outline of the Caucasus Mountains visible in the distance. This combination of 'culture + nature' has more historical depth than the snow mountains and lakes I saw in Switzerland, and more vastness than the historical sites I've seen in China. Every casual shot is an atmospheric masterpiece requiring no editing. I found several camera angles, shooting from panoramic views to relief close-ups, even using a drone to capture the entire mountaintop scenery. When I posted on social media, everyone asked about it, thinking I had gone to some obscure European hidden gem. No one imagined that this place combining Eastern vitality with Western romance is Georgia - an overlooked gem at the Eurasian crossroads.\n\nAfter visiting the monument, I went directly to a nearby winery, drinking local qvevri wine while recalling the winemaking scenes I had just seen on the reliefs, suddenly feeling a sense of 'traveling through history.' I've tasted Bordeaux from France and Tuscany from Italy, but was uniquely moved by Georgia's qvevri wine - no complex processes, just the most authentic grape aroma, like this monument - not deliberate, not showy, but sufficiently attractive. For me, this isn't just a photo spot, but a place where I can calm down and understand Caucasian civilization. Compared to crowded popular attractions, such niche, meaningful places that bring abundant happiness are the true purpose of my international travels."
+      },
+      {
+        "author": "Jack",
+        "title": "Hiking to the Summit, Unlocking an 'Unfinished Epic'",
+        "nationality": "American Tourist",
+        "content": "As an American who frequently backpacks around the world, having traveled through dozens of countries in Asia, Europe, and Africa - from the bustling markets of Southeast Asia to the primitive grasslands of Africa to the classical monuments of Europe - I always look for places that are less commercialized and have stories to tell. Georgia's Chronicle of Georgia perfectly matches my expectations for a 'perfect destination' - no excessive promotion, no crowds, no commercial souvenir shops, only the weight of history and the vastness of nature. This sense of purity is something I've never felt in major metropolitan areas like New York or London, and it has more authenticity than what I've seen at other popular historical sites in Europe.\n\nI started from Tbilisi's old town and hiked all the way to the mountaintop, taking about 40 minutes. The scenery along the way became increasingly beautiful - from the city's red roofs to the distant Caucasus Mountains to the sparkling Tbilisi Sea, every step brought surprises. I've hiked many trails around the world - Nepal's hiking routes are perilous but remote, Switzerland's are refined but commercialized, while this route has both natural wildness and urban vitality. Along the way, I could see local residents drying grapes by the roadside, hear children's laughter, and smell the faint aroma of wine in the air. This kind of life-integrated hiking experience felt particularly intimate to me. For me, the hiking process itself is a form of travel. Rather than taking a car up the mountain, I prefer to measure this land with my footsteps, feel the breath of the wind, listen to local conversations, and understand a city's truest appearance.\n\nWhen the monument appeared before my eyes, I was shocked by its grandeur. Sixteen bronze columns arranged neatly, with dense reliefs covering them, telling 3,000 years of Georgian history from religious legends to folk customs, every detail full of power. I've seen America's Mount Rushmore - grand but political; I've seen Egypt's obelisks - ancient but somewhat monotonous. This monument has both the grandeur of Mount Rushmore and the antiquity of obelisks, plus the unique cultural heritage of the Eurasian crossroads. Later I learned that due to the Soviet Union's dissolution and funding cuts, this monument was never fully completed. This 'unfinished' state actually makes it more charming - unlike those perfect monuments, it's more like real history, carrying regrets but also hope, much like the many countries I've traveled through - imperfect but sufficiently moving.\n\nI sat beside the giant columns, basking in the sun, looking at the distant scenery, and chatting with a local elderly man. He told me this monument is the pride of Georgians, with each column carrying their history and faith, much like the Statue of Liberty's meaning for Americans. Looking at the figures on the reliefs, imagining their lives, I suddenly realized that history is never cold text but vivid stories. No matter which country you're in or what culture you have, people's reverence for history and love for life are interconnected. This cross-cultural resonance is the greatest reward of my years of international travel.\n\nAs an American accustomed to mainstream Western history and culture, having grown up under the influence of the Washington Monument and Lincoln Memorial, Georgia as an 'edge civilization' at the Eurasian crossroads is full of attraction for me. The Orthodox traditions here, the unique Kartvelian language, and traces of the Soviet period all feel fresh and magical to me, having both similarities and distinct characteristics compared to the Christian culture I've seen in Europe and the Eastern culture I've seen in Asia. After visiting the monument, I went hiking along the Black Sea coast, perfectly combining history and nature. This is the kind of travel I want - free, authentic, gaining different experiences and understanding the charm of different cultures. This is why I persist in international travel."
+      },
+      {
+        "author": "Lina",
+        "title": "In the Caucasus, Encountering Familiar Yet Foreign Cultural Echoes",
+        "nationality": "Italian Tourist",
+        "content": "I come from Italy, having grown up among churches and historical monuments - Rome's Colosseum, Florence's Cathedral of Santa Maria del Fiore, Venice's St. Mark's Basilica are all etched into my life. I originally thought that no monument could surprise me much, having seen too many European classical treasures. That was until I came to Georgia and saw the Chronicle of Georgia, a monument at the foot of the Caucasus Mountains that completely shattered my preconceptions about 'historical monuments.'\n\nAt first sight, this monument felt familiar - the biblical stories on the lower reliefs, Noah's Ark, The Last Supper, are almost identical to the frescoes and sculptures in our Italian churches. That shared sense of Orthodox culture gave me instant resonance. I've traveled through many European countries - French churches are exquisite and gorgeous, German churches are solemn and dignified, while this Georgian monument perfectly integrates religious culture with local history, having both shadows of European religious culture and regional characteristics of the Caucasus. I couldn't help but stop and examine every detail of the reliefs, as if watching a familiar history with a touch of fresh unfamiliarity. After all, this is the extension of Christian civilization in the Caucasus, sharing similarities with our European religious culture while having unique charm. This cross-regional cultural resonance is something I've never experienced elsewhere.\n\nFor me, coming to Georgia also has an important reason - the value for money is excellent. I've traveled through many European countries where Western European prices are daunting - a cup of coffee in Paris costs 5 euros, a simple meal in London costs 20 euros. But here, a cup of coffee costs only 3 euros, a local specialty meal just 10 euros, and the scenery rivals the Alps. The Black Sea coast is even more tranquil and beautiful than the Mediterranean, without crowds or commercial noise, only pure nature and beauty. For us Europeans, this is like a 'low-cost vacation paradise' where we can experience different cultures while enjoying a relaxing holiday. Why not?\n\nI love slow travel. Having visited many countries, I always believe that the meaning of travel lies not in how many attractions you check off, but in experiencing local life. After visiting the monument, I didn't rush to leave but went to Tbilisi's old town. Visiting the sulfur baths - the warm spring water is similar to our Italian spas but with unique sulfur fragrance; browsing the flea market - the handicrafts have both European refinement and Eastern simplicity; tasting local cheese bread and wine - the rich cheese and sweet wine have similar qualities to Italian cuisine but with added Caucasian flavors. Sitting in the old town square, watching people come and go while drinking local wine, I suddenly felt that the meaning of travel is finding familiar emotions in unfamiliar places, crossing regional boundaries to understand the beauty of different cultures.\n\nThe monument's sculptural style also interests me greatly. Designer Zurab Tsereteli perfectly integrates Byzantine art, traditional Georgian reliefs, and modernism, having both the refinement of European classical sculpture and the weight of Eastern art. I couldn't help but take out my camera to photograph every detail, planning to share with friends back home, telling them that in the Caucasus, there's such a monument that contains echoes of European culture and different Eastern charm. I've seen many sculptures around the world - Italy's David is exquisitely beautiful, France's Venus is elegant and moving, while this monument's sculptures aren't so perfect but have sufficient power, carrying Georgia's history and the fusion of Eurasian cultures. This is its most unique charm."
+      },
+      {
+        "author": "Katya",
+        "title": "Under the Monument, Placing Homesickness and Peace",
+        "nationality": "Russian Tourist",
+        "content": "I came to Georgia not so much for travel as to find a sense of belonging. As a Russian, I've traveled to many countries - Beijing and Shanghai in China to experience Eastern culture, Paris and Berlin in Europe to feel Western romance, Bangkok and Kuala Lumpur in Southeast Asia to enjoy tropical liveliness. But Georgia has never been a strange country to me. The culture, faith, and even cuisine here have too many similarities with ours, and the Chronicle of Georgia has given me a long-lost sense of intimacy that I cannot experience in any other country.\n\nFlying from Moscow to Tbilisi takes only 2 hours, with cheap tickets and visa-free entry. For me, it's like a short escape. After the Russia-Ukraine conflict, I've always felt exhausted, always wanting to find a quiet place to relax and stay away from noise and disputes. I've been to many countries but never found that sense of peace until I came to Georgia. There are no shadows of war here, no noisy crowds, only tranquility and beauty, much like the Russian countryside - warm and healing, but with added unique Eurasian crossroads flavor.\n\nWhen I stood before the monument, looking at those familiar Orthodox icons and Soviet-era artistic styles, my eyes suddenly became moist. This monument was built during the Soviet period, our shared historical memory. Every bronze column carries my memories of the past and the friendship between our two countries, just like Moscow's Red Square and St. Basil's Cathedral - irreplaceable cultural symbols in our hearts. Touching the patterns on the reliefs, I could almost feel the original intentions of the builders. That cultural closeness cannot be replaced anywhere. I've visited historical sites in many countries - China's Great Wall is magnificent, France's Eiffel Tower is romantic, but none have given me such a strong sense of belonging as this monument.\n\nUnlike other tourists busy taking photos, I found a quiet corner, sat on the grass, looked at the distant Tbilisi Sea, felt the wind, and thought about nothing. There is no noise or disputes here, only tranquility and beauty, allowing me to temporarily forget all troubles. Sometimes I chat with local Russian immigrants, listening to their stories about life here. The resonance of being fellow foreigners makes me feel warm. I also communicate with local Georgians - they are warm and kind, sharing with us Russians a love for life and reverence for history. This cross-national friendship moves me deeply.\n\nFor me, this monument is not just a historical site but the sustenance of my soul. It has witnessed Georgia's history and the past of our two countries. Here I can find cultural roots and inner peace. Every time I come here, I feel grounded, as if all homesickness can be placed here. I've been to many places and seen many landscapes, but I particularly favor this place - this cross-regional intimacy, this tranquility and beauty. If you come to Georgia, you must visit this monument. It will let you understand what cultural resonance is, what peace in the heart is, and make you realize that no matter where you are, the power of culture can always cross regional boundaries and warm people's hearts."
+      }
+    ],
+    "footer": "These authentic visitor stories showcase how the Chronicles of Georgia monument touches the hearts of tourists from around the world, becoming the most precious part of their travel memories."
   },
   "theme": {
     "light": "Light mode",

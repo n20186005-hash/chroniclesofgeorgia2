@@ -7,7 +7,7 @@ import VisitorTestimonials from '@/components/VisitorTestimonials';
 import MapEmbed from '@/components/MapEmbed';
 import Sources from '@/components/Sources';
 
-export default function HomePage() {
+export default function BlogPage3() {
   return (
     <>
       <Hero />
