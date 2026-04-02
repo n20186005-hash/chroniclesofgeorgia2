@@ -1,5 +1,33 @@
 import BlogLayout from '@/components/BlogLayout';
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
+import { locales, defaultLocale } from '@/i18n/config';
+import type { Metadata } from 'next';
+
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'blogPages.photography' });
+  const baseUrl = 'https://www.chroniclesofgeorgia.com';
+  
+  const alternateLanguages: Record<string, string> = {
+    'ka': `${baseUrl}/blog/photography`,
+    'en': `${baseUrl}/en/blog/photography`,
+    'ru': `${baseUrl}/ru/blog/photography`,
+    'zh-Hant': `${baseUrl}/zh-hant/blog/photography`,
+    'zh-CN': `${baseUrl}/zh-cn/blog/photography`,
+    'x-default': `${baseUrl}/blog/photography`,
+  };
+
+  const canonicalUrl = locale === defaultLocale ? `${baseUrl}/blog/photography` : `${baseUrl}/${locale}/blog/photography`;
+
+  return {
+    title: `${t('title')} | Chronicles of Georgia`,
+    description: t('description'),
+    alternates: {
+      canonical: canonicalUrl,
+      languages: alternateLanguages,
+    },
+  };
+}
 
 export default function PhotographyBlogPage() {
   const t = useTranslations('blogPages.photography');

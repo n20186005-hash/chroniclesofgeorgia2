@@ -2,7 +2,7 @@
 import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 import { useState, useRef, useEffect } from 'react';
-import { locales } from '@/i18n/config';
+import { locales, defaultLocale } from '@/i18n/config';
 
 const localeNames: Record<string, string> = {
   'ka': 'ქართული',
@@ -38,9 +38,8 @@ export default function LanguageToggle() {
         break;
       }
     }
-    const newPath = newLocale === 'ka' ? path : `/${newLocale}${path}`;
-    router.push(newPath);
-    setIsOpen(false);
+    const newPath = newLocale === defaultLocale ? path : `/${newLocale}${path}`;
+    window.location.href = newPath;
   };
 
   return (

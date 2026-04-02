@@ -1,12 +1,13 @@
 'use client';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { defaultLocale } from '@/i18n/config';
 
 export default function BlogPreview() {
   const t = useTranslations('blogPreview');
   const visitorT = useTranslations('visitorTestimonials');
   const locale = useLocale();
-  const prefix = locale === 'ka' ? '' : `/${locale}`;
+  const prefix = locale === defaultLocale ? '' : `/${locale}`;
 
   const visitorItems = visitorT.raw('items') as Array<{
     author: string;

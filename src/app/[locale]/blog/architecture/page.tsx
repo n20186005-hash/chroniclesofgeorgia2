@@ -1,5 +1,33 @@
 import BlogLayout from '@/components/BlogLayout';
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
+import { locales, defaultLocale } from '@/i18n/config';
+import type { Metadata } from 'next';
+
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'blogPages.architecture' });
+  const baseUrl = 'https://www.chroniclesofgeorgia.com';
+  
+  const alternateLanguages: Record<string, string> = {
+    'ka': `${baseUrl}/blog/architecture`,
+    'en': `${baseUrl}/en/blog/architecture`,
+    'ru': `${baseUrl}/ru/blog/architecture`,
+    'zh-Hant': `${baseUrl}/zh-hant/blog/architecture`,
+    'zh-CN': `${baseUrl}/zh-cn/blog/architecture`,
+    'x-default': `${baseUrl}/blog/architecture`,
+  };
+
+  const canonicalUrl = locale === defaultLocale ? `${baseUrl}/blog/architecture` : `${baseUrl}/${locale}/blog/architecture`;
+
+  return {
+    title: `${t('title')} | Chronicles of Georgia`,
+    description: t('description'),
+    alternates: {
+      canonical: canonicalUrl,
+      languages: alternateLanguages,
+    },
+  };
+}
 
 export default function ArchitectureBlogPage() {
   const t = useTranslations('blogPages.architecture');

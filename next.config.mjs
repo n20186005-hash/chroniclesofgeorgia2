@@ -12,6 +12,20 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/blog/:locale(zh-cn|zh-hant|en|ru)',
+        destination: '/:locale/blog',
+        permanent: true,
+      },
+      {
+        source: '/blog/:locale(zh-cn|zh-hant|en|ru)/:slug*',
+        destination: '/:locale/blog/:slug*',
+        permanent: true,
+      }
+    ];
+  }
 };
 
 export default withNextIntl(nextConfig);

@@ -1,11 +1,38 @@
 import BlogLayout from '@/components/BlogLayout';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
+import { locales, defaultLocale } from '@/i18n/config';
+import type { Metadata } from 'next';
 
-export default function BlogIndexPage({ params: { locale } }: { params: { locale: string } }) {
-  const t = useTranslations('blogPreview');
-  const visitorT = useTranslations('visitorTestimonials');
-  const prefix = locale === 'ka' ? '' : `/${locale}`;
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: 'blogPreview' });
+  const baseUrl = 'https://www.chroniclesofgeorgia.com';
+  
+  const alternateLanguages: Record<string, string> = {
+    'ka': `${baseUrl}/blog`,
+    'en': `${baseUrl}/en/blog`,
+    'ru': `${baseUrl}/ru/blog`,
+    'zh-Hant': `${baseUrl}/zh-hant/blog`,
+    'zh-CN': `${baseUrl}/zh-cn/blog`,
+    'x-default': `${baseUrl}/blog`,
+  };
+
+  const canonicalUrl = locale === defaultLocale ? `${baseUrl}/blog` : `${baseUrl}/${locale}/blog`;
+
+  return {
+    title: `${t('title')} | Chronicles of Georgia`,
+    description: t('subtitle'),
+    alternates: {
+      canonical: canonicalUrl,
+      languages: alternateLanguages,
+    },
+  };
+}
+
+export default async function BlogIndexPage({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: 'blogPreview' });
+  const visitorT = await getTranslations({ locale, namespace: 'visitorTestimonials' });
+  const prefix = locale === defaultLocale ? '' : `/${locale}`;
 
   const visitorItems = visitorT.raw('items') as Array<{
     author: string;
