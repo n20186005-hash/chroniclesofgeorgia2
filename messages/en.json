@@ -222,5 +222,11 @@
       "title": "Homesickness and peace",
       "description": "A Russian traveler on memory, belonging, and quiet by the monument."
     }
+  },
+  "blogPreview": {
+    "title": "Travel Blog",
+    "subtitle": "Chronicles of Georgia Monument Guide and Personal Experiences",
+    "readMore": "Read More",
+    "viewAll": "View All"
   }
 }

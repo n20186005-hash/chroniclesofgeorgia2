@@ -15,67 +15,6 @@ export default function BlogPreview() {
     content: string;
   }>;
 
-  const excerptFrom = (content: string, maxLen = 120) => {
-    const firstParagraph = content.split(/\n\s*\n/)[0]?.trim() || '';
-    const text = firstParagraph.length ? firstParagraph : content.trim();
-    return text.length > maxLen ? `${text.slice(0, maxLen)}…` : text;
-  };
-
-  const blogPosts = [
-    {
-      id: 'history',
-      title: t('history.title'),
-      description: t('history.description'),
-      link: `${prefix}/blog/history`,
-    },
-    {
-      id: 'architecture',
-      title: t('architecture.title'),
-      description: t('architecture.description'),
-      link: `${prefix}/blog/architecture`,
-    },
-    {
-      id: 'travel-tips',
-      title: t('travelTips.title'),
-      description: t('travelTips.description'),
-      link: `${prefix}/blog/travel-tips`,
-    },
-    {
-      id: 'photography',
-      title: t('photography.title'),
-      description: t('photography.description'),
-      link: `${prefix}/blog/photography`,
-    },
-    {
-      id: 'story-xiaotao',
-      title: visitorItems?.[0]?.title || t('storyXiaotao.title'),
-      description:
-        visitorItems?.[0]?.content ? excerptFrom(visitorItems[0].content) : t('storyXiaotao.description'),
-      link: `${prefix}/blog/stereoscopic-history`,
-    },
-    {
-      id: 'story-jack',
-      title: visitorItems?.[1]?.title || t('storyJack.title'),
-      description:
-        visitorItems?.[1]?.content ? excerptFrom(visitorItems[1].content) : t('storyJack.description'),
-      link: `${prefix}/blog/hiking-unfinished-epic`,
-    },
-    {
-      id: 'story-lina',
-      title: visitorItems?.[2]?.title || t('storyLina.title'),
-      description:
-        visitorItems?.[2]?.content ? excerptFrom(visitorItems[2].content) : t('storyLina.description'),
-      link: `${prefix}/blog/cultural-echo-caucasus`,
-    },
-    {
-      id: 'story-katya',
-      title: visitorItems?.[3]?.title || t('storyKatya.title'),
-      description:
-        visitorItems?.[3]?.content ? excerptFrom(visitorItems[3].content) : t('storyKatya.description'),
-      link: `${prefix}/blog/monument-nostalgia-peace`,
-    },
-  ];
-
   return (
     <section id="blog-preview" className="section-spacing" style={{ background: 'var(--bg-secondary)' }}>
       <div className="max-w-6xl mx-auto px-6">
@@ -88,42 +27,152 @@ export default function BlogPreview() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          {blogPosts.map((post) => (
-            <Link key={post.id} href={post.link} className="group">
-              <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className="h-48 bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 mx-auto mb-2 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                      <span className="text-white text-2xl font-bold">
-                        {post.title.charAt(0)}
-                      </span>
-                    </div>
-                    <span className="text-sm text-gray-500">{post.id}</span>
+        {/* Featured Visitor Stories */}
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          {visitorItems.slice(0, 2).map((item, index) => (
+            <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+              <div className="p-6">
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                    {item.author.charAt(0)}
+                  </div>
+                  <div className="ml-4">
+                    <h3 className="font-semibold text-lg">{item.author}</h3>
+                    <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>{item.nationality}</p>
                   </div>
                 </div>
-
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">
-                    {post.title}
-                  </h3>
-                  <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
-                    {post.description}
-                  </p>
-                  <div className="mt-4 flex items-center text-blue-600 group-hover:text-blue-700 transition-colors">
-                    <span className="text-sm font-medium">{t('readMore')}</span>
-                    <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
+                <h4 className="text-xl font-semibold mb-3">{item.title}</h4>
+                <p className="text-gray-700 line-clamp-3 mb-4">
+                  {item.content.substring(0, 150)}...
+                </p>
+                <div className="flex items-center justify-between">
+                  <div className="flex text-yellow-400">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                      </svg>
+                    ))}
                   </div>
+                  <span className="text-sm" style={{ color: 'var(--text-secondary)' }}>5/5</span>
                 </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
 
+        {/* Blog Categories */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+          <Link href={`${prefix}/blog/history`} className="group">
+            <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="h-32 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-12 h-12 mx-auto mb-2 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white text-xl">📜</span>
+                  </div>
+                  <span className="text-blue-800 font-medium">历史文化</span>
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-2 group-hover:text-blue-600 transition-colors">
+                  历史探索
+                </h3>
+                <p className="text-sm text-gray-600 mb-3">
+                  深入了解格鲁吉亚3000年的历史文化
+                </p>
+                <div className="flex items-center text-blue-600 group-hover:text-blue-700 transition-colors">
+                  <span className="text-sm font-medium">阅读更多</span>
+                  <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          <Link href={`${prefix}/blog/architecture`} className="group">
+            <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="h-32 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-12 h-12 mx-auto mb-2 bg-purple-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white text-xl">🏛️</span>
+                  </div>
+                  <span className="text-purple-800 font-medium">建筑艺术</span>
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-2 group-hover:text-purple-600 transition-colors">
+                  建筑赏析
+                </h3>
+                <p className="text-sm text-gray-600 mb-3">
+                  探索纪念碑独特的建筑设计与艺术价值
+                </p>
+                <div className="flex items-center text-purple-600 group-hover:text-purple-700 transition-colors">
+                  <span className="text-sm font-medium">阅读更多</span>
+                  <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          <Link href={`${prefix}/blog/travel-tips`} className="group">
+            <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="h-32 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-12 h-12 mx-auto mb-2 bg-green-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white text-xl">🎒</span>
+                  </div>
+                  <span className="text-green-800 font-medium">旅行攻略</span>
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-2 group-hover:text-green-600 transition-colors">
+                  实用攻略
+                </h3>
+                <p className="text-sm text-gray-600 mb-3">
+                  详细的旅行建议和实用信息
+                </p>
+                <div className="flex items-center text-green-600 group-hover:text-green-700 transition-colors">
+                  <span className="text-sm font-medium">阅读更多</span>
+                  <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </Link>
+
+          <Link href={`${prefix}/blog/photography`} className="group">
+            <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+              <div className="h-32 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-12 h-12 mx-auto mb-2 bg-orange-600 rounded-lg flex items-center justify-center">
+                    <span className="text-white text-xl">📸</span>
+                  </div>
+                  <span className="text-orange-800 font-medium">摄影指南</span>
+                </div>
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-2 group-hover:text-orange-600 transition-colors">
+                  摄影技巧
+                </h3>
+                <p className="text-sm text-gray-600 mb-3">
+                  最佳拍摄点和摄影技巧分享
+                </p>
+                <div className="flex items-center text-orange-600 group-hover:text-orange-700 transition-colors">
+                  <span className="text-sm font-medium">阅读更多</span>
+                  <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+
         <div className="text-center">
-          <Link
+          <Link 
             href={`${prefix}/#blog-preview`}
             className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
           >

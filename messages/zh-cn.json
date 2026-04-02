@@ -218,5 +218,11 @@
       "title": "纪念碑下的乡愁与安宁",
       "description": "俄罗斯访客：记忆、归属与宁静。"
     }
+  },
+  "blogPreview": {
+    "title": "旅行博客",
+    "subtitle": "格鲁吉亚编年史纪念碑攻略与亲历分享",
+    "readMore": "阅读更多",
+    "viewAll": "查看全部"
   }
 }
