@@ -15,6 +15,61 @@ export default function BlogPreview() {
     content: string;
   }>;
 
+  const blogCategories = [
+    {
+      id: 'history',
+      icon: '📜',
+      title: t('history.title'),
+      description: t('history.description'),
+      link: `${prefix}/blog/history`,
+      gradient: 'from-blue-100 to-blue-200',
+      textColor: 'text-blue-800',
+      bgColor: 'bg-blue-600',
+      hoverColor: 'hover:text-blue-600',
+      linkColor: 'text-blue-600',
+      linkHoverColor: 'text-blue-700'
+    },
+    {
+      id: 'architecture', 
+      icon: '🏛️',
+      title: t('architecture.title'),
+      description: t('architecture.description'),
+      link: `${prefix}/blog/architecture`,
+      gradient: 'from-purple-100 to-purple-200',
+      textColor: 'text-purple-800',
+      bgColor: 'bg-purple-600',
+      hoverColor: 'hover:text-purple-600',
+      linkColor: 'text-purple-600',
+      linkHoverColor: 'text-purple-700'
+    },
+    {
+      id: 'travel-tips',
+      icon: '🎒',
+      title: t('travelTips.title'), 
+      description: t('travelTips.description'),
+      link: `${prefix}/blog/travel-tips`,
+      gradient: 'from-green-100 to-green-200',
+      textColor: 'text-green-800',
+      bgColor: 'bg-green-600',
+      hoverColor: 'hover:text-green-600',
+      linkColor: 'text-green-600',
+      linkHoverColor: 'text-green-700'
+    },
+    {
+      id: 'photography',
+      icon: '📸',
+      title: t('photography.title'),
+      description: t('photography.description'), 
+      link: `${prefix}/blog/photography`,
+      gradient: 'from-orange-100 to-orange-200',
+      textColor: 'text-orange-800',
+      bgColor: 'bg-orange-600',
+      hoverColor: 'hover:text-orange-600',
+      linkColor: 'text-orange-600',
+      linkHoverColor: 'text-orange-700'
+    }
+  ];
+
   return (
     <section id="blog-preview" className="section-spacing" style={{ background: 'var(--bg-secondary)' }}>
       <div className="max-w-6xl mx-auto px-6">
@@ -62,113 +117,34 @@ export default function BlogPreview() {
 
         {/* Blog Categories */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          <Link href={`${prefix}/blog/history`} className="group">
-            <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="h-32 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-12 h-12 mx-auto mb-2 bg-blue-600 rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xl">📜</span>
+          {blogCategories.map((category) => (
+            <Link key={category.id} href={category.link} className="group">
+              <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className={`h-32 bg-gradient-to-br ${category.gradient} flex items-center justify-center`}>
+                  <div className="text-center">
+                    <div className={`w-12 h-12 mx-auto mb-2 ${category.bgColor} rounded-lg flex items-center justify-center`}>
+                      <span className="text-white text-xl">{category.icon}</span>
+                    </div>
+                    <span className={`${category.textColor} font-medium`}>{category.title}</span>
                   </div>
-                  <span className="text-blue-800 font-medium">历史文化</span>
                 </div>
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold mb-2 group-hover:text-blue-600 transition-colors">
-                  历史探索
-                </h3>
-                <p className="text-sm text-gray-600 mb-3">
-                  深入了解格鲁吉亚3000年的历史文化
-                </p>
-                <div className="flex items-center text-blue-600 group-hover:text-blue-700 transition-colors">
-                  <span className="text-sm font-medium">阅读更多</span>
-                  <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          <Link href={`${prefix}/blog/architecture`} className="group">
-            <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="h-32 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-12 h-12 mx-auto mb-2 bg-purple-600 rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xl">🏛️</span>
+                <div className="p-4">
+                  <h3 className={`font-semibold mb-2 ${category.hoverColor} transition-colors`}>
+                    {category.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    {category.description}
+                  </p>
+                  <div className={`flex items-center ${category.linkColor} group-hover:${category.linkHoverColor} transition-colors`}>
+                    <span className="text-sm font-medium">{t('readMore')}</span>
+                    <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
                   </div>
-                  <span className="text-purple-800 font-medium">建筑艺术</span>
                 </div>
               </div>
-              <div className="p-4">
-                <h3 className="font-semibold mb-2 group-hover:text-purple-600 transition-colors">
-                  建筑赏析
-                </h3>
-                <p className="text-sm text-gray-600 mb-3">
-                  探索纪念碑独特的建筑设计与艺术价值
-                </p>
-                <div className="flex items-center text-purple-600 group-hover:text-purple-700 transition-colors">
-                  <span className="text-sm font-medium">阅读更多</span>
-                  <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          <Link href={`${prefix}/blog/travel-tips`} className="group">
-            <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="h-32 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-12 h-12 mx-auto mb-2 bg-green-600 rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xl">🎒</span>
-                  </div>
-                  <span className="text-green-800 font-medium">旅行攻略</span>
-                </div>
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold mb-2 group-hover:text-green-600 transition-colors">
-                  实用攻略
-                </h3>
-                <p className="text-sm text-gray-600 mb-3">
-                  详细的旅行建议和实用信息
-                </p>
-                <div className="flex items-center text-green-600 group-hover:text-green-700 transition-colors">
-                  <span className="text-sm font-medium">阅读更多</span>
-                  <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </Link>
-
-          <Link href={`${prefix}/blog/photography`} className="group">
-            <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-              <div className="h-32 bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-12 h-12 mx-auto mb-2 bg-orange-600 rounded-lg flex items-center justify-center">
-                    <span className="text-white text-xl">📸</span>
-                  </div>
-                  <span className="text-orange-800 font-medium">摄影指南</span>
-                </div>
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold mb-2 group-hover:text-orange-600 transition-colors">
-                  摄影技巧
-                </h3>
-                <p className="text-sm text-gray-600 mb-3">
-                  最佳拍摄点和摄影技巧分享
-                </p>
-                <div className="flex items-center text-orange-600 group-hover:text-orange-700 transition-colors">
-                  <span className="text-sm font-medium">阅读更多</span>
-                  <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </Link>
+            </Link>
+          ))}
         </div>
 
         <div className="text-center">
