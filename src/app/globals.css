@@ -17,6 +17,11 @@
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
   --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
   --star-color: #d97706;
+  --blog-header-bg: #ffffff;
+  --blog-history-color: #1e40af; /* blue-800 */
+  --blog-architecture-color: #6b21a8; /* purple-800 */
+  --blog-travel-color: #166534; /* green-800 */
+  --blog-photography-color: #9a3412; /* orange-800 */
 }
 
 [data-theme="dark"] {
@@ -34,6 +39,11 @@
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
   --star-color: #fbbf24;
+  --blog-header-bg: var(--bg-primary); /* pure black / page bg */
+  --blog-history-color: #f3f4f6; /* light gray */
+  --blog-architecture-color: #f3f4f6;
+  --blog-travel-color: #f3f4f6;
+  --blog-photography-color: #f3f4f6;
 }
 
 * {

@@ -22,12 +22,7 @@ export default function BlogPreview() {
       title: t('history.title'),
       description: t('history.description'),
       link: `${prefix}/blog/history`,
-      gradient: 'from-blue-100 to-blue-200',
-      textColor: 'text-blue-800',
-      bgColor: 'bg-blue-600',
-      hoverColor: 'hover:text-blue-600',
-      linkColor: 'text-blue-600',
-      linkHoverColor: 'text-blue-700'
+      themeVar: 'var(--blog-history-color)'
     },
     {
       id: 'architecture', 
@@ -35,12 +30,7 @@ export default function BlogPreview() {
       title: t('architecture.title'),
       description: t('architecture.description'),
       link: `${prefix}/blog/architecture`,
-      gradient: 'from-purple-100 to-purple-200',
-      textColor: 'text-purple-800',
-      bgColor: 'bg-purple-600',
-      hoverColor: 'hover:text-purple-600',
-      linkColor: 'text-purple-600',
-      linkHoverColor: 'text-purple-700'
+      themeVar: 'var(--blog-architecture-color)'
     },
     {
       id: 'travel-tips',
@@ -48,12 +38,7 @@ export default function BlogPreview() {
       title: t('travelTips.title'), 
       description: t('travelTips.description'),
       link: `${prefix}/blog/travel-tips`,
-      gradient: 'from-green-100 to-green-200',
-      textColor: 'text-green-800',
-      bgColor: 'bg-green-600',
-      hoverColor: 'hover:text-green-600',
-      linkColor: 'text-green-600',
-      linkHoverColor: 'text-green-700'
+      themeVar: 'var(--blog-travel-color)'
     },
     {
       id: 'photography',
@@ -61,12 +46,7 @@ export default function BlogPreview() {
       title: t('photography.title'),
       description: t('photography.description'), 
       link: `${prefix}/blog/photography`,
-      gradient: 'from-orange-100 to-orange-200',
-      textColor: 'text-orange-800',
-      bgColor: 'bg-orange-600',
-      hoverColor: 'hover:text-orange-600',
-      linkColor: 'text-orange-600',
-      linkHoverColor: 'text-orange-700'
+      themeVar: 'var(--blog-photography-color)'
     }
   ];
 
@@ -119,23 +99,31 @@ export default function BlogPreview() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {blogCategories.map((category) => (
             <Link key={category.id} href={category.link} className="group">
-              <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                <div className={`h-32 bg-gradient-to-br ${category.gradient} flex items-center justify-center`}>
+              <div 
+                className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border-color)' }}
+              >
+                <div 
+                  className="h-32 flex items-center justify-center transition-colors duration-300 border-b"
+                  style={{ backgroundColor: 'var(--blog-header-bg)', borderColor: 'var(--border-color)' }}
+                >
                   <div className="text-center">
-                    <div className={`w-12 h-12 mx-auto mb-2 ${category.bgColor} rounded-lg flex items-center justify-center`}>
-                      <span className="text-white text-xl">{category.icon}</span>
+                    <div className="text-3xl mb-2 transition-transform duration-300 group-hover:scale-110">
+                      {category.icon}
                     </div>
-                    <span className={`${category.textColor} font-medium`}>{category.title}</span>
+                    <span className="font-medium transition-colors duration-300" style={{ color: category.themeVar }}>
+                      {category.title}
+                    </span>
                   </div>
                 </div>
                 <div className="p-4">
-                  <h3 className={`font-semibold mb-2 ${category.hoverColor} transition-colors`}>
+                  <h3 className="font-semibold mb-2 transition-colors" style={{ color: 'var(--text-primary)' }}>
                     {category.title}
                   </h3>
-                  <p className="text-sm text-gray-600 mb-3">
+                  <p className="text-sm mb-3" style={{ color: 'var(--text-secondary)' }}>
                     {category.description}
                   </p>
-                  <div className={`flex items-center ${category.linkColor} group-hover:${category.linkHoverColor} transition-colors`}>
+                  <div className="flex items-center transition-colors" style={{ color: category.themeVar }}>
                     <span className="text-sm font-medium">{t('readMore')}</span>
                     <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
