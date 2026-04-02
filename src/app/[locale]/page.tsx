@@ -4,6 +4,7 @@ import Gallery from '@/components/Gallery';
 import Reviews from '@/components/Reviews';
 import Guide from '@/components/Guide';
 import VisitorTestimonials from '@/components/VisitorTestimonials';
+import BlogPreview from '@/components/BlogPreview';
 import MapEmbed from '@/components/MapEmbed';
 import Sources from '@/components/Sources';
 
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Reviews />
       <Guide />
       <VisitorTestimonials />
+      <BlogPreview />
       <MapEmbed />
       <Sources />
     </>

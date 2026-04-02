@@ -21,6 +21,7 @@
   "hero": {
     "title": "格鲁吉亚编年史",
     "subtitle": "祖拉布·采列捷利的杰作 - 格鲁吉亚历史纪念碑",
+    "tagline": "第比利斯的“黑色巨石阵”——苏联时期的杰作，讲述格鲁吉亚3000年的历史",
     "rating": "4.8/5",
     "ratingCount": "(12,626 评论)",
     "openHours": "24 小时开放",
@@ -117,6 +118,13 @@
     "text": "本网站是一个独立的第三方项目，用于旅游信息目的。信息来自公共来源，包括 Google 地图、当地旅游机构和维基百科。照片来自 Unsplash。",
     "disclaimer": "我们不隶属于第比利斯市政府或任何其他官方机构。"
   },
+  "footer": {
+    "support": "本网站技术支持请联系：",
+    "rights": "© 2026 格鲁吉亚编年史 · 保留所有权利",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "cookies": "Cookie 设置"
+  },
   "visitorTestimonials": {
     "title": "格鲁吉亚编年史纪念碑：游客的打卡手记",
     "items": [
@@ -165,5 +173,50 @@
   "cookieSettings": {
     "title": "Cookie 设置",
     "content": "本网站仅使用网站正常运行和记住您的语言和主题偏好设置所需的技术性 Cookie。我们不使用跟踪或广告 Cookie。"
+  },
+  "visitorStoryBlog": {
+    "backToBlog": "返回博客文章",
+    "sectionLabel": "游客手记",
+    "moreStories": "更多游客故事",
+    "readStory": "阅读",
+    "seeOnHome": "在首页查看更多故事"
+  },
+  "blogPreview": {
+    "title": "旅行博客",
+    "subtitle": "格鲁吉亚编年史纪念碑攻略与亲历分享",
+    "readMore": "阅读全文",
+    "viewAll": "查看全部文章",
+    "history": {
+      "title": "历史文化",
+      "description": "三千年格鲁吉亚历史，镌刻在青铜与石柱之上。"
+    },
+    "architecture": {
+      "title": "建筑艺术",
+      "description": "祖拉布·采列捷利的苏联现代主义与纪念碑结构。"
+    },
+    "travelTips": {
+      "title": "旅行攻略",
+      "description": "交通、装备与最佳参观时间。"
+    },
+    "photography": {
+      "title": "摄影指南",
+      "description": "光线、机位与出片建议。"
+    },
+    "storyXiaotao": {
+      "title": "立体的历史课本",
+      "description": "中国游客：青铜巨柱、红酒文化与第比利斯海。"
+    },
+    "storyJack": {
+      "title": "徒步解锁未完成的史诗",
+      "description": "美国背包客：从老城徒步登顶纪念碑。"
+    },
+    "storyLina": {
+      "title": "熟悉又陌生的文化回响",
+      "description": "意大利旅人：信仰、艺术与慢旅行。"
+    },
+    "storyKatya": {
+      "title": "纪念碑下的乡愁与安宁",
+      "description": "俄罗斯访客：记忆、归属与宁静。"
+    }
   }
 }

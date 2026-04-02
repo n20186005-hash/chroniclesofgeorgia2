@@ -21,6 +21,7 @@
   "hero": {
     "title": "格魯吉亞編年史",
     "subtitle": "祖拉布·采列捷利的傑作 - 格魯吉亞歷史紀念碑",
+    "tagline": "第比利斯的“黑色巨石陣”——蘇聯時期的傑作，講述喬治亞3000年的歷史",
     "rating": "4.8/5",
     "ratingCount": "(12,626 評論)",
     "openHours": "24 小時開放",
@@ -195,5 +196,50 @@
   "cookieSettings": {
     "title": "Cookie 設置",
     "content": "本網站僅使用網站正常運行和記住您的語言和主題偏好設置所需的技術性 Cookie。我們不使用跟踪或廣告 Cookie。"
+  },
+  "visitorStoryBlog": {
+    "backToBlog": "返回部落格文章",
+    "sectionLabel": "遊客手記",
+    "moreStories": "更多遊客故事",
+    "readStory": "閱讀",
+    "seeOnHome": "在首頁查看更多故事"
+  },
+  "blogPreview": {
+    "title": "旅行部落格",
+    "subtitle": "格魯吉亞編年史紀念碑攻略與親身分享",
+    "readMore": "閱讀全文",
+    "viewAll": "查看全部文章",
+    "history": {
+      "title": "歷史文化",
+      "description": "三千年格魯吉亞歷史，鐫刻在青銅與石柱之上。"
+    },
+    "architecture": {
+      "title": "建築藝術",
+      "description": "祖拉布·采列捷利的蘇聯現代主義與紀念碑結構。"
+    },
+    "travelTips": {
+      "title": "旅行攻略",
+      "description": "交通、裝備與最佳參觀時間。"
+    },
+    "photography": {
+      "title": "攝影指南",
+      "description": "光線、機位與出片建議。"
+    },
+    "storyXiaotao": {
+      "title": "立體的歷史課本",
+      "description": "中國遊客：青銅巨柱、紅酒文化與第比利斯海。"
+    },
+    "storyJack": {
+      "title": "徒步解鎖未完成的史詩",
+      "description": "美國背包客：從老城徒步登頂紀念碑。"
+    },
+    "storyLina": {
+      "title": "熟悉又陌生的文化迴響",
+      "description": "義大利旅人：信仰、藝術與慢旅行。"
+    },
+    "storyKatya": {
+      "title": "紀念碑下的鄉愁與安寧",
+      "description": "俄羅斯訪客：記憶、歸屬與寧靜。"
+    }
   }
 }

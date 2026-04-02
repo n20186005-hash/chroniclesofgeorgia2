@@ -118,6 +118,13 @@
     "text": "This website is an independent third-party project for tourism information purposes. Information is gathered from public sources including Google Maps, local tourism agencies, and Wikipedia. Photos are from Unsplash.",
     "disclaimer": "We are not affiliated with the Tbilisi City Hall or any other official institutions."
   },
+  "footer": {
+    "support": "For technical support of this website, contact:",
+    "rights": "© 2026 Chronicles of Georgia · All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Settings"
+  },
   "visitorTestimonials": {
     "title": "Chronicles of Georgia Monument: Visitor Stories",
     "items": [
@@ -170,5 +177,50 @@
   "cookieSettings": {
     "title": "Cookie Settings",
     "content": "This website only uses technical cookies necessary for the site to function and to remember your language and theme preferences. We do not use tracking or advertising cookies."
+  },
+  "visitorStoryBlog": {
+    "backToBlog": "Back to blog articles",
+    "sectionLabel": "Visitor story",
+    "moreStories": "More visitor stories",
+    "readStory": "Read",
+    "seeOnHome": "More stories on the home page"
+  },
+  "blogPreview": {
+    "title": "Travel Blog",
+    "subtitle": "Guides and first-hand stories from the Chronicles of Georgia monument",
+    "readMore": "Read more",
+    "viewAll": "View all articles",
+    "history": {
+      "title": "History & Culture",
+      "description": "Three millennia of Georgian history carved in bronze and stone."
+    },
+    "architecture": {
+      "title": "Architecture",
+      "description": "Zurab Tsereteli's Soviet-era modernism and the monument's structure."
+    },
+    "travelTips": {
+      "title": "Travel Tips",
+      "description": "How to get there, what to bring, and when to visit."
+    },
+    "photography": {
+      "title": "Photography",
+      "description": "Best light, angles, and spots for memorable photos."
+    },
+    "storyXiaotao": {
+      "title": "A three-dimensional history textbook",
+      "description": "A Chinese traveler on bronze columns, wine culture, and the Tbilisi Sea."
+    },
+    "storyJack": {
+      "title": "Hiking to an unfinished epic",
+      "description": "An American backpacker walks from Old Tbilisi to the monument."
+    },
+    "storyLina": {
+      "title": "Familiar and foreign echoes",
+      "description": "An Italian visitor on faith, art, and slow travel in Georgia."
+    },
+    "storyKatya": {
+      "title": "Homesickness and peace",
+      "description": "A Russian traveler on memory, belonging, and quiet by the monument."
+    }
   }
 }
