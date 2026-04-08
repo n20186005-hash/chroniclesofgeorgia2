@@ -36,7 +36,7 @@ export default function TravelTipsBlogPage() {
     <BlogLayout 
       title={t('title')}
       description={t('description')}
-      coverImage="https://images.unsplash.com/photo-1546412414-8035e1776c9a?q=80&w=2070&auto=format&fit=crop"
+      coverImage="https://images.unsplash.com/photo-1543888761-002fdf5eb8d6?q=80&w=2070&auto=format&fit=crop"
     >
       <div className="space-y-8">
         <section>

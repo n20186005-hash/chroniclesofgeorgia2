@@ -112,8 +112,6 @@ export default async function BlogIndexPage({ params: { locale } }: { params: { 
       coverImage="https://images.unsplash.com/photo-1543888761-002fdf5eb8d6?q=80&w=2070&auto=format&fit=crop"
     >
       <div className="space-y-12">
-        <TripAdBanner id="SB15266995_blog_index_top" />
-        
         {/* Guide Blogs */}
         <section>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -248,8 +246,6 @@ export default async function BlogIndexPage({ params: { locale } }: { params: { 
             ))}
           </div>
         </section>
-
-        <TripAdBanner id="SB15266995_blog_index_bottom" />
       </div>
     </BlogLayout>
   );
