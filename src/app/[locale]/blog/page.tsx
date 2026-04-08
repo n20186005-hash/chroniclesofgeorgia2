@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { locales, defaultLocale } from '@/i18n/config';
 import type { Metadata } from 'next';
 import TripAdBanner from '@/components/TripAdBanner';
+import RecommendedTours from '@/components/RecommendedTours';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'blogPreview' });
@@ -193,7 +194,7 @@ export default async function BlogIndexPage({ params: { locale } }: { params: { 
           </div>
         </section>
 
-        <TripAdBanner id="SB15266995_blog_index_mid" />
+        <TripAdBanner id="SB15266995_blog_index_mid" type="home" />
 
         {/* Visitor Stories */}
         <section>
@@ -246,6 +247,8 @@ export default async function BlogIndexPage({ params: { locale } }: { params: { 
             ))}
           </div>
         </section>
+
+        <RecommendedTours />
       </div>
     </BlogLayout>
   );

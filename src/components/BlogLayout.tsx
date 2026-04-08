@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import TripAdBanner from './TripAdBanner';
+import RecommendedTours from './RecommendedTours';
 
 interface BlogLayoutProps {
   title: string;
@@ -55,13 +56,17 @@ export default function BlogLayout({ title, description, children, coverImage }:
 
       {/* Blog Content */}
       <div className="max-w-4xl mx-auto px-6 py-12">
-        <TripAdBanner id="SB15266995_blog_top" />
+        <TripAdBanner id="SB15271426_blog_top" type="tours" />
         
         <article className="prose prose-lg max-w-none my-12">
           {children}
         </article>
         
-        <TripAdBanner id="SB15266995_blog_bottom" />
+        <RecommendedTours />
+        
+        <div className="my-12">
+          <TripAdBanner id="SB15271076_blog_bottom" type="hotels" />
+        </div>
         
         {/* Related Posts */}
         <div className="mt-16 pt-8 border-t border-gray-200">
