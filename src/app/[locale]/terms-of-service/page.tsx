@@ -1,6 +1,7 @@
 import { useLocale } from 'next-intl';
 import Link from 'next/link';
-import { defaultLocale } from '@/i18n/config';
+import { locales, defaultLocale } from '@/i18n/config';
+import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const baseUrl = 'https://www.piazzapopoloascoli.com';
@@ -25,8 +26,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default function TermsOfServicePage() {
-  const locale = useLocale();
+export default async function TermsOfServicePage({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: 'affiliate' });
 
   const content = {
     en: {
@@ -46,7 +47,11 @@ export default function TermsOfServicePage() {
           text: "Unless otherwise stated, all content on this site (including text, images, logos) is protected by copyright. No reproduction, distribution, or commercial use is permitted without explicit authorization. Photo credits may include royalty-free resources from platforms like Unsplash or contributors on Google Maps."
         },
         {
-          title: "4. Limitation of Liability",
+          title: "4. Affiliate Disclosure",
+          text: "Some links on this website are affiliate links, such as those to Trip.com. This means that we may earn a commission if you click on the link or make a purchase using the link, at no additional cost to you. This helps support the maintenance of our free guides."
+        },
+        {
+          title: "5. Limitation of Liability",
           text: "To the fullest extent permitted by law, this site and its owners shall not be liable for any direct, indirect, incidental, or consequential damages arising from the use or inability to use this site. When visiting natural sites, please always prioritize safety."
         }
       ],
@@ -69,7 +74,11 @@ export default function TermsOfServicePage() {
           text: "除非另有說明，本網站上的所有內容（包括文字、圖像、標誌）均受版權保護。未經明確授權，不允許進行任何複製、散佈或商業使用。照片來源可能包括 Unsplash 等平台的免版稅資源或 Google 地圖上的貢獻者。"
         },
         {
-          title: "4. 責任限制",
+          title: "4. 聯盟披露",
+          text: "本網站上的某些連結是聯盟連結，例如前往 Trip.com 的連結。這意味著如果您點擊連結或透過連結進行購買，我們可能會獲得佣金，而您無需支付任何額外費用。這有助於支持我們維護免費的旅行指南。"
+        },
+        {
+          title: "5. 責任限制",
           text: "在法律允許的最大範圍內，本網站及其擁有者對因使用或無法使用本網站而引起的任何直接、間接、附帶或後果性損害概不負責。在參觀自然景點時，請始終將安全放在首位。"
         }
       ],
@@ -92,7 +101,11 @@ export default function TermsOfServicePage() {
           text: "Sauf indication contraire, tout le contenu de ce site (y compris les textes, images, logos) est protégé par le droit d'auteur. Aucune reproduction, distribution ou utilisation commerciale n'est autorisée sans autorisation explicite. Les crédits photos peuvent inclure des ressources libres de droits provenant de plateformes telles que Unsplash ou de contributeurs sur Google Maps."
         },
         {
-          title: "4. Limitation de responsabilité",
+          title: "4. Divulgation d'affiliation",
+          text: "Certains liens sur ce site Web sont des liens d'affiliation, tels que ceux vers Trip.com. Cela signifie que nous pouvons gagner une commission si vous cliquez sur le lien ou effectuez un achat en utilisant le lien, sans frais supplémentaires pour vous. Cela aide à soutenir la maintenance de nos guides gratuits."
+        },
+        {
+          title: "5. Limitation de responsabilité",
           text: "Dans toute la mesure permise par la loi, ce site et ses propriétaires ne seront pas responsables des dommages directs, indirects, accessoires ou consécutifs découlant de l'utilisation ou de l'incapacité d'utiliser ce site. Lors de la visite de sites naturels, veuillez toujours donner la priorité à la sécurité."
         }
       ],
@@ -115,7 +128,11 @@ export default function TermsOfServicePage() {
           text: "Se non diversamente specificato, tutti i contenuti di questo sito (inclusi testi, immagini, loghi) sono protetti da copyright. Nessuna riproduzione, distribuzione o uso commerciale è consentito senza un'esplicita autorizzazione. I crediti fotografici possono includere risorse royalty-free da piattaforme come Unsplash o collaboratori su Google Maps."
         },
         {
-          title: "4. Limitazione di responsabilità",
+          title: "4. Divulgazione di Affiliazione",
+          text: "Alcuni link su questo sito web sono link di affiliazione, come quelli a Trip.com. Questo significa che potremmo guadagnare una commissione se fai clic sul link o effettui un acquisto utilizzando il link, senza alcun costo aggiuntivo per te. Questo ci aiuta a supportare la manutenzione delle nostre guide gratuite."
+        },
+        {
+          title: "5. Limitazione di responsabilità",
           text: "Nella misura massima consentita dalla legge, questo sito e i suoi proprietari non saranno responsabili per eventuali danni diretti, indiretti, accidentali o consequenziali derivanti dall'uso o dall'incapacità di utilizzare questo sito. Quando si visitano siti naturali, si prega di dare sempre la priorità alla sicurezza."
         }
       ],
@@ -158,6 +175,12 @@ export default function TermsOfServicePage() {
               <p className="leading-relaxed">{section.text}</p>
             </div>
           ))}
+          
+          <div className="mt-8 p-6 rounded-xl bg-blue-50/50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-800">
+            <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+              {t('disclosure')}
+            </p>
+          </div>
         </div>
       </div>
     </div>

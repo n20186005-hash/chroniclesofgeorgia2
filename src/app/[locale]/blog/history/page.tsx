@@ -36,6 +36,7 @@ export default function HistoryBlogPage() {
     <BlogLayout 
       title={t('title')}
       description={t('description')}
+      coverImage="https://images.unsplash.com/photo-1582226296561-1250df990b79?q=80&w=2070&auto=format&fit=crop"
     >
       <div className="space-y-8">
         <section>

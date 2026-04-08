@@ -3,6 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import { locales, defaultLocale } from '@/i18n/config';
 import type { Metadata } from 'next';
+import TripAdBanner from '@/components/TripAdBanner';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: 'blogPreview' });
@@ -76,6 +77,27 @@ export default async function BlogIndexPage({ params: { locale } }: { params: { 
     }
   ];
 
+  const travelStories = [
+    {
+      id: 'mtskheta-wine-tour',
+      icon: '🍷',
+      title: t('mtskhetaWineTour.title'),
+      titleShort: t('mtskhetaWineTour.titleShort', { default: 'Wine Tour' }),
+      description: t('mtskhetaWineTour.description'),
+      link: `${prefix}/blog/mtskheta-wine-tour`,
+      themeVar: '#9333ea' // Purple-600
+    },
+    {
+      id: 'tbilisi-sighnaghi-4-days',
+      icon: '🏰',
+      title: t('tbilisiSighnaghi4Days.title'),
+      titleShort: t('tbilisiSighnaghi4Days.titleShort', { default: '4 Days Tour' }),
+      description: t('tbilisiSighnaghi4Days.description'),
+      link: `${prefix}/blog/tbilisi-sighnaghi-4-days`,
+      themeVar: '#e11d48' // Rose-600
+    }
+  ];
+
   const visitorStoryLinks = [
     `${prefix}/blog/stereoscopic-history`,
     `${prefix}/blog/hiking-unfinished-epic`,
@@ -87,11 +109,15 @@ export default async function BlogIndexPage({ params: { locale } }: { params: { 
     <BlogLayout 
       title={t('title')}
       description={t('subtitle')}
+      coverImage="https://images.unsplash.com/photo-1543888761-002fdf5eb8d6?q=80&w=2070&auto=format&fit=crop"
     >
       <div className="space-y-12">
+        <TripAdBanner id="SB15266995_blog_index_top" />
+        
         {/* Guide Blogs */}
         <section>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Guide categories mapping */}
             {blogCategories.map((category) => (
               <Link key={category.id} href={category.link} className="group">
                 <div 
@@ -112,10 +138,10 @@ export default async function BlogIndexPage({ params: { locale } }: { params: { 
                     </div>
                   </div>
                   <div className="p-4">
-                    <h3 className="font-semibold mb-2 transition-colors" style={{ color: 'var(--text-primary)' }}>
+                    <h3 className="font-semibold mb-2 transition-colors line-clamp-1" style={{ color: 'var(--text-primary)' }}>
                       {category.title}
                     </h3>
-                    <p className="text-sm mb-3" style={{ color: 'var(--text-secondary)' }}>
+                    <p className="text-sm mb-3 line-clamp-2" style={{ color: 'var(--text-secondary)' }}>
                       {category.description}
                     </p>
                     <div className="flex items-center transition-colors" style={{ color: category.themeVar }}>
@@ -128,8 +154,48 @@ export default async function BlogIndexPage({ params: { locale } }: { params: { 
                 </div>
               </Link>
             ))}
+            
+            {/* Additional Travel Stories mapping */}
+            {travelStories.map((story) => (
+              <Link key={story.id} href={story.link} className="group">
+                <div 
+                  className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full"
+                  style={{ backgroundColor: 'var(--bg-card)', border: '1px solid var(--border-color)' }}
+                >
+                  <div 
+                    className="h-32 flex items-center justify-center transition-colors duration-300 border-b"
+                    style={{ backgroundColor: 'var(--blog-header-bg)', borderColor: 'var(--border-color)' }}
+                  >
+                    <div className="text-center">
+                      <div className="text-3xl mb-2 transition-transform duration-300 group-hover:scale-110">
+                        {story.icon}
+                      </div>
+                      <span className="font-medium transition-colors duration-300" style={{ color: story.themeVar }}>
+                        {story.titleShort}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="p-4">
+                    <h3 className="font-semibold mb-2 transition-colors line-clamp-1" style={{ color: 'var(--text-primary)' }}>
+                      {story.title}
+                    </h3>
+                    <p className="text-sm mb-3 line-clamp-2" style={{ color: 'var(--text-secondary)' }}>
+                      {story.description}
+                    </p>
+                    <div className="flex items-center transition-colors" style={{ color: story.themeVar }}>
+                      <span className="text-sm font-medium">{t('readMore')}</span>
+                      <svg className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
         </section>
+
+        <TripAdBanner id="SB15266995_blog_index_mid" />
 
         {/* Visitor Stories */}
         <section>
@@ -182,6 +248,8 @@ export default async function BlogIndexPage({ params: { locale } }: { params: { 
             ))}
           </div>
         </section>
+
+        <TripAdBanner id="SB15266995_blog_index_bottom" />
       </div>
     </BlogLayout>
   );

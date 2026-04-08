@@ -1,10 +1,12 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 export function CookieSettingsClient({ locale }: { locale: string }) {
   const [analyticsAccepted, setAnalyticsAccepted] = useState(true);
   const [marketingAccepted, setMarketingAccepted] = useState(true);
+  const t = useTranslations('affiliate');
 
   const content = {
     en: {
@@ -26,7 +28,7 @@ export function CookieSettingsClient({ locale }: { locale: string }) {
         },
         {
           title: "Marketing Cookies",
-          text: "These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites.",
+          text: "These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. This site also uses affiliate links (such as Trip.com) which may use cookies to track referrals.",
           action: "Accept Marketing Cookies",
           state: marketingAccepted,
           setState: setMarketingAccepted
@@ -53,7 +55,7 @@ export function CookieSettingsClient({ locale }: { locale: string }) {
         },
         {
           title: "行銷 Cookie",
-          text: "這些 Cookie 可能由我們的廣告合作夥伴透過我們的網站設定。這些公司可能會使用它們來建立您的興趣概況，並在其他網站上向您展示相關廣告。",
+          text: "這些 Cookie 可能由我們的廣告合作夥伴透過我們的網站設定。這些公司可能會使用它們來建立您的興趣概況，並在其他網站上向您展示相關廣告。本網站還使用聯盟連結（例如 Trip.com），這些連結可能會使用 Cookie 來追蹤推薦來源。",
           action: "接受行銷 Cookie",
           state: marketingAccepted,
           setState: setMarketingAccepted
@@ -80,7 +82,7 @@ export function CookieSettingsClient({ locale }: { locale: string }) {
         },
         {
           title: "Cookies marketing",
-          text: "Ces cookies peuvent être mis en place au sein de notre site Web par nos partenaires publicitaires. Ils peuvent être utilisés par ces sociétés pour établir un profil de vos intérêts et vous proposer des publicités pertinentes sur d'autres sites Web.",
+          text: "Ces cookies peuvent être mis en place au sein de notre site Web par nos partenaires publicitaires. Ils peuvent être utilisés par ces sociétés pour établir un profil de vos intérêts et vous proposer des publicités pertinentes sur d'autres sites Web. Ce site utilise également des liens d'affiliation (tels que Trip.com) qui peuvent utiliser des cookies pour suivre les références.",
           action: "Accepter les cookies marketing",
           state: marketingAccepted,
           setState: setMarketingAccepted
@@ -107,7 +109,7 @@ export function CookieSettingsClient({ locale }: { locale: string }) {
         },
         {
           title: "Cookie di marketing",
-          text: "Questi cookie possono essere impostati tramite il nostro sito dai nostri partner pubblicitari. Possono essere utilizzati da tali aziende per creare un profilo dei tuoi interessi e mostrarti annunci pertinenti su altri siti.",
+          text: "Questi cookie possono essere impostati tramite il nostro sito dai nostri partner pubblicitari. Possono essere utilizzati da tali aziende per creare un profilo dei tuoi interessi e mostrarti annunci pertinenti su altri siti. Questo sito utilizza anche link di affiliazione (come Trip.com) che potrebbero utilizzare cookie per tracciare i referral.",
           action: "Accetta i cookie di marketing",
           state: marketingAccepted,
           setState: setMarketingAccepted
@@ -180,6 +182,12 @@ export function CookieSettingsClient({ locale }: { locale: string }) {
               </p>
             </div>
           ))}
+        </div>
+        
+        <div className="mt-8 p-6 rounded-xl bg-blue-50/50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-800">
+          <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+            {t('disclosure')}
+          </p>
         </div>
       </div>
     </div>

@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
+import { defaultLocale } from '@/i18n/config';
+import TripAdBanner from './TripAdBanner';
 
 const STORY_SLUGS = [
   'stereoscopic-history',
@@ -16,7 +18,7 @@ interface VisitorStoryBlogClientProps {
 
 export default function VisitorStoryBlogClient({ storyIndex }: VisitorStoryBlogClientProps) {
   const locale = useLocale();
-  const prefix = locale === 'ka' ? '' : `/${locale}`;
+  const prefix = locale === defaultLocale ? '' : `/${locale}`;
   const t = useTranslations('visitorTestimonials');
   const ui = useTranslations('visitorStoryBlog');
 
@@ -45,7 +47,7 @@ export default function VisitorStoryBlogClient({ storyIndex }: VisitorStoryBlogC
 
         <div className="relative z-10 w-full max-w-6xl mx-auto px-6 pb-12 md:pb-16">
           <Link
-            href={`${prefix}/#blog-preview`}
+            href={`${prefix}/blog`}
             className="inline-flex items-center text-white/85 hover:text-white text-sm mb-6 transition-colors"
           >
             <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,8 +71,10 @@ export default function VisitorStoryBlogClient({ storyIndex }: VisitorStoryBlogC
 
       <section className="section-spacing" style={{ background: 'var(--bg-secondary)' }}>
         <div className="max-w-3xl mx-auto px-6">
+          <TripAdBanner id="SB15266995_visitor_top" />
+          
           <div
-            className="p-8 md:p-10 rounded-xl shadow-lg"
+            className="p-8 md:p-10 rounded-xl shadow-lg my-12"
             style={{
               background: 'var(--bg-card)',
               border: '1px solid var(--border-color)',
@@ -87,6 +91,8 @@ export default function VisitorStoryBlogClient({ storyIndex }: VisitorStoryBlogC
               </p>
             ))}
           </div>
+          
+          <TripAdBanner id="SB15266995_visitor_bottom" />
         </div>
       </section>
 
@@ -134,10 +140,10 @@ export default function VisitorStoryBlogClient({ storyIndex }: VisitorStoryBlogC
 
           <div className="text-center mt-12">
             <Link
-              href={`${prefix}/#visitor-testimonials`}
+              href={`${prefix}/blog`}
               className="inline-flex items-center px-6 py-3 rounded-lg font-medium text-white bg-blue-600 hover:bg-blue-700 transition-colors"
             >
-              {ui('seeOnHome')}
+              {ui('backToBlog')}
             </Link>
           </div>
         </div>

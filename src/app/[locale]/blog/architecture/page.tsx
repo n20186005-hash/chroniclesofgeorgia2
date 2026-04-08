@@ -36,6 +36,7 @@ export default function ArchitectureBlogPage() {
     <BlogLayout 
       title={t('title')}
       description={t('description')}
+      coverImage="https://images.unsplash.com/photo-1555580289-417101886f78?q=80&w=2070&auto=format&fit=crop"
     >
       <div className="space-y-8">
         <section>

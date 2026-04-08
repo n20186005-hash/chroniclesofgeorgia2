@@ -36,6 +36,7 @@ export default function PhotographyBlogPage() {
     <BlogLayout 
       title={t('title')}
       description={t('description')}
+      coverImage="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=2000&auto=format&fit=crop"
     >
       <div className="space-y-8">
         <section>

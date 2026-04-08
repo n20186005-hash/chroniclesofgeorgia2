@@ -1,6 +1,7 @@
 import { useLocale } from 'next-intl';
 import Link from 'next/link';
-import { defaultLocale } from '@/i18n/config';
+import { locales, defaultLocale } from '@/i18n/config';
+import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const baseUrl = 'https://www.chroniclesofgeorgia.com';
@@ -26,8 +27,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default function PrivacyPolicyPage() {
-  const locale = useLocale();
+export default async function PrivacyPolicyPage({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: 'affiliate' });
 
   const content = {
     en: {
@@ -35,19 +36,23 @@ export default function PrivacyPolicyPage() {
       lastUpdated: "Last updated: March 2026",
       sections: [
         {
-          title: "1. Information Collection",
+          title: "1. Affiliate Links and Advertising",
+          text: "This website contains affiliate links to Trip.com and other partners. If you make a booking through these links, we may earn a small commission at no additional cost to you. This helps support us in maintaining the website and continuing to provide free travel guides. We do not control the privacy practices of these third-party platforms."
+        },
+        {
+          title: "2. Information Collection",
           text: "We are committed to protecting your privacy. This site primarily serves as an informational platform about the Chronicles of Georgia monument and generally does not actively collect personally identifiable information from users. However, through server logs and analytics tools, we may collect non-personally identifiable information such as browser type, access times, and page view records."
         },
         {
-          title: "2. Use of Cookies",
+          title: "3. Use of Cookies",
           text: "To provide a better user experience and understand how the site is used, we may use cookies. These cookies are used to remember user preferences and analyze site traffic. You can adjust cookie settings in your browser."
         },
         {
-          title: "3. Third-Party Links",
-          text: "This site may contain links to third-party sites (e.g., Google Maps). We are not responsible for the privacy practices of these external sites. We encourage you to read the privacy statements of any site that collects personal information when you leave our site."
+          title: "4. Third-Party Links",
+          text: "This site may contain links to third-party sites (e.g., Google Maps, Trip.com). We are not responsible for the privacy practices of these external sites. We encourage you to read the privacy statements of any site that collects personal information when you leave our site."
         },
         {
-          title: "4. Contact Us",
+          title: "5. Contact Us",
           text: "If you have any questions or concerns regarding this privacy policy, please contact us at: n20186005@gmail.com"
         }
       ],
@@ -58,19 +63,23 @@ export default function PrivacyPolicyPage() {
       lastUpdated: "最後更新：2026年3月",
       sections: [
         {
-          title: "1. 資訊收集",
+          title: "1. 聯盟連結與廣告",
+          text: "本網站包含 Trip.com 及其他合作夥伴的聯盟連結。如果您透過這些連結進行預訂，我們可能會獲得一筆小額佣金，這不會對您產生任何額外費用。這有助於支持我們維護網站並持續提供免費的旅行指南。我們無法控制這些第三方平台的隱私慣例。"
+        },
+        {
+          title: "2. 資訊收集",
           text: "我們致力於保護您的隱私。本網站主要作為格魯吉亞編年史紀念碑的資訊平台，通常不會主動收集使用者的個人識別資訊。然而，透過伺服器日誌和分析工具，我們可能會收集非個人識別資訊，例如瀏覽器類型、存取時間和網頁瀏覽記錄。"
         },
         {
-          title: "2. Cookie 的使用",
+          title: "3. Cookie 的使用",
           text: "為了提供更好的使用者體驗並了解網站的使用情況，我們可能會使用 Cookie。這些 Cookie 用於記住使用者偏好和分析網站流量。您可以在瀏覽器中調整 Cookie 設定。"
         },
         {
-          title: "3. 第三方連結",
-          text: "本網站可能包含指向第三方網站（例如 Google 地圖）的連結。我們對這些外部網站的隱私慣例不承擔任何責任。我們鼓勵您在離開本網站時閱讀收集個人資訊的任何網站的隱私聲明。"
+          title: "4. 第三方連結",
+          text: "本網站可能包含指向第三方網站（例如 Google 地圖、Trip.com）的連結。我們對這些外部網站的隱私慣例不承擔任何責任。我們鼓勵您在離開本網站時閱讀收集個人資訊的任何網站的隱私聲明。"
         },
         {
-          title: "4. 聯絡我們",
+          title: "5. 聯絡我們",
           text: "如果您對本隱私政策有任何疑問或疑慮，請聯絡我們：n20186005@gmail.com"
         }
       ],
@@ -81,19 +90,23 @@ export default function PrivacyPolicyPage() {
       lastUpdated: "Последнее обновление: Март 2026",
       sections: [
         {
-          title: "1. Сбор информации",
+          title: "1. Партнерские ссылки и реклама",
+          text: "Этот веб-сайт содержит партнерские ссылки на Trip.com и других партнеров. Если вы бронируете через эти ссылки, мы можем заработать небольшую комиссию без дополнительных затрат для вас. Это помогает поддерживать наш сайт и продолжать предоставлять бесплатные путеводители. Мы не контролируем политику конфиденциальности этих сторонних платформ."
+        },
+        {
+          title: "2. Сбор информации",
           text: "Мы стремимся защищать вашу конфиденциальность. Этот сайт в первую очередь служит информационной платформой о памятнике Летописи Грузии и обычно не активно собирает персональную информацию от пользователей. Однако через журналы сервера и инструменты аналитики мы можем собирать неперсонализированную информацию, такую как тип браузера, время доступа и записи просмотра страниц."
         },
         {
-          title: "2. Использование файлов cookie",
+          title: "3. Использование файлов cookie",
           text: "Чтобы обеспечить лучший пользовательский опыт и понять, как используется сайт, мы можем использовать файлы cookie. Эти файлы cookie используются для запоминания предпочтений пользователей и анализа трафика сайта. Вы можете настроить параметры cookie в своем браузере."
         },
         {
-          title: "3. Сторонние ссылки",
-          text: "Этот сайт может содержать ссылки на сторонние сайты (например, Google Карты). Мы не несем ответственности за политику конфиденциальности этих внешних сайтов. Мы рекомендуем вам прочитать заявления о конфиденциальности любого сайта, который собирает персональную информацию, когда вы покидаете наш сайт."
+          title: "4. Сторонние ссылки",
+          text: "Этот сайт может содержать ссылки на сторонние сайты (например, Google Карты, Trip.com). Мы не несем ответственности за политику конфиденциальности этих внешних сайтов. Мы рекомендуем вам прочитать заявления о конфиденциальности любого сайта, который собирает персональную информацию, когда вы покидаете наш сайт."
         },
         {
-          title: "4. Свяжитесь с нами",
+          title: "5. Свяжитесь с нами",
           text: "Если у вас есть вопросы или проблемы, связанные с этой политикой конфиденциальности, пожалуйста, свяжитесь с нами: n20186005@gmail.com"
         }
       ],
@@ -104,19 +117,23 @@ export default function PrivacyPolicyPage() {
       lastUpdated: "ბოლო განახლება: მარტი 2026",
       sections: [
         {
-          title: "1. ინფორმაციის შეგროვება",
+          title: "1. პარტნიორული ბმულები და რეკლამა",
+          text: "ეს ვებსაიტი შეიცავს Trip.com-ისა და სხვა პარტნიორების პარტნიორულ ბმულებს. თუ თქვენ დაჯავშნით ამ ბმულების საშუალებით, ჩვენ შეიძლება მივიღოთ მცირე საკომისიო თქვენთვის დამატებითი ხარჯების გარეშე. ეს გვეხმარება ვებსაიტის შენარჩუნებაში და უფასო სამოგზაურო გზამკვლევების მოწოდების გაგრძელებაში. ჩვენ არ ვაკონტროლებთ ამ მესამე მხარის პლატფორმების კონფიდენციალურობის პრაქტიკას."
+        },
+        {
+          title: "2. ინფორმაციის შეგროვება",
           text: "ჩვენ ვიცავთ თქვენს კონფიდენციალურობას. ეს საიტი ძირითადად slouz的信息平台ა საქართველოს მატიანის მონუმენტის შესახებ და ჩვეულებრივ არ აგროვებს აქტიურად პერსონალურ ინფორმაციას მომხმარებლებისგან. თუმცა, სერვერის ჟურნალებისა და ანალიტიკის ინსტრუმენტების მეშვეობით, ჩვენ შეიძლება შევაგროვოთ არაპერსონალური ინფორმაცია, როგორიცაა ბრაუზერის ტიპი, წვდომის დრო და გვერდების ნახვის ჩანაწერები."
         },
         {
-          title: "2. Cookie-ების გამოყენება",
+          title: "3. Cookie-ების გამოყენება",
           text: "კარგი მომხმარებლის გამოცდილებისა და საიტის გამოყენების გაგებისთვის, ჩვენ შეიძლება გამოვიყენოთ Cookie-ები. ეს Cookie-ები გამოიყენება მომხმარებლის უპირატესობების დასამახსოვრებლად და საიტის ტრაფიკის ანალიზისთვის. შეგიძლიათ მოირგოთ Cookie-ების პარამეტრები თქვენს ბრაუზერში."
         },
         {
-          title: "3. მესამე მხარის ბმულები",
-          text: "ეს საიტი შეიძლება შეიცავდეს ბმულებს მესამე მხარის საიტებზე (მაგალითად, Google Maps). ჩვენ არ ვართ პასუხისმგებელი ამ გარე საიტების კონფიდენციალურობის პრაქტიკაზე. გირჩევთ, წაიკითხოთ კონფიდენციალურობის განცხადებები ნებისმიერი საიტისთვის, რომელიც აგროვებს პერსონალურ ინფორმაციას, როდესაც ტოვებთ ჩვენს საიტს."
+          title: "4. მესამე მხარის ბმულები",
+          text: "ეს საიტი შეიძლება შეიცავდეს ბმულებს მესამე მხარის საიტებზე (მაგალითად, Google Maps, Trip.com). ჩვენ არ ვართ პასუხისმგებელი ამ გარე საიტების კონფიდენციალურობის პრაქტიკაზე. გირჩევთ, წაიკითხოთ კონფიდენციალურობის განცხადებები ნებისმიერი საიტისთვის, რომელიც აგროვებს პერსონალურ ინფორმაციას, როდესაც ტოვებთ ჩვენს საიტს."
         },
         {
-          title: "4. დაგვიკავშირდით",
+          title: "5. დაგვიკავშირდით",
           text: "თუ გაქვთ რაიმე კითხვები ან შეშფოთება ამ კონფიდენციალურობის პოლიტიკასთან დაკავშირებით, გთხოვთ, დაგვიკავშირდეთ: n20186005@gmail.com"
         }
       ],
@@ -159,6 +176,12 @@ export default function PrivacyPolicyPage() {
               <p className="leading-relaxed">{section.text}</p>
             </div>
           ))}
+          
+          <div className="mt-8 p-6 rounded-xl bg-blue-50/50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-800">
+            <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+              {t('disclosure')}
+            </p>
+          </div>
         </div>
       </div>
     </div>
