@@ -10,7 +10,9 @@ export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
-}): Promise<Metadata> {  const messages = (await import(`../../../../../messages/${locale as Locale}.json`)).default as {
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const messages = (await import(`../../../../../messages/${locale as Locale}.json`)).default as {
     visitorTestimonials?: { items?: Array<{ title: string; content: string }> };
   };
   const item = messages.visitorTestimonials?.items?.[STORY_INDEX];

@@ -3,7 +3,9 @@ import Link from 'next/link';
 import { locales, defaultLocale } from '@/i18n/config';
 import { getTranslations } from 'next-intl/server';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {  const baseUrl = 'https://www.chroniclesofgeorgia.com';
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const baseUrl = 'https://www.chroniclesofgeorgia.com';
   const path = '/privacy-policy';
 
   const alternateLanguages: Record<string, string> = {    'ka': `${baseUrl}${path}`,
@@ -25,7 +27,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default async function PrivacyPolicyPage({ params }: { params: Promise<{ locale: string }> }) {  const t = await getTranslations({ locale, namespace: 'affiliate' });
+export default async function PrivacyPolicyPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'affiliate' });
 
   const content = {
     en: {

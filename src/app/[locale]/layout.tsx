@@ -16,7 +16,9 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {  const messages = await getMessages();
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const messages = await getMessages();
   const meta = (messages as Record<string, Record<string, string>>).meta;
 
   const baseUrl = 'https://www.chroniclesofgeorgia.com';
@@ -52,7 +54,9 @@ export default async function LocaleLayout({
 }: {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
-}) {  if (!locales.includes(locale as typeof locales[number])) {    notFound();
+}) {
+  const { locale } = await params;
+  if (!locales.includes(locale as typeof locales[number])) {    notFound();
   }
 
   setRequestLocale(locale);

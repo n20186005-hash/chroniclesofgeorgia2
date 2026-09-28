@@ -6,7 +6,9 @@ import type { Metadata } from 'next';
 import TripAdBanner from '@/components/TripAdBanner';
 import RecommendedTours from '@/components/RecommendedTours';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {  const t = await getTranslations({ locale, namespace: 'blogPreview' });
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'blogPreview' });
   const baseUrl = 'https://www.chroniclesofgeorgia.com';
   
   const alternateLanguages: Record<string, string> = {
@@ -30,7 +32,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default async function BlogIndexPage({ params }: { params: Promise<{ locale: string }> }) {  const t = await getTranslations({ locale, namespace: 'blogPreview' });
+export default async function BlogIndexPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'blogPreview' });
   const visitorT = await getTranslations({ locale, namespace: 'visitorTestimonials' });
   const prefix = locale === defaultLocale ? '' : `/${locale}`;
 
