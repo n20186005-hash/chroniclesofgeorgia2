@@ -2,9 +2,7 @@ import { useLocale } from 'next-intl';
 import { CookieSettingsClient } from './client';
 import { defaultLocale } from '@/i18n/config';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
-  const baseUrl = 'https://www.piazzapopoloascoli.com';
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {  const baseUrl = 'https://www.piazzapopoloascoli.com';
   const path = '/cookie-settings';
 
   const alternateLanguages: Record<string, string> = {    'it': `${baseUrl}/it${path}`,
