@@ -7,11 +7,10 @@ const STORY_INDEX = 2 as const;
 const PAGE_SLUG = 'cultural-echo-caucasus';
 
 export async function generateMetadata({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string };
-}): Promise<Metadata> {
-  const messages = (await import(`../../../../../messages/${locale as Locale}.json`)).default as {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {  const messages = (await import(`../../../../../messages/${locale as Locale}.json`)).default as {
     visitorTestimonials?: { items?: Array<{ title: string; content: string }> };
   };
   const item = messages.visitorTestimonials?.items?.[STORY_INDEX];

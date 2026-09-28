@@ -3,12 +3,12 @@ import Link from 'next/link';
 import { locales, defaultLocale } from '@/i18n/config';
 import { getTranslations } from 'next-intl/server';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const baseUrl = 'https://www.piazzapopoloascoli.com';
   const path = '/terms-of-service';
 
-  const alternateLanguages: Record<string, string> = {
-    'it': `${baseUrl}/it${path}`,
+  const alternateLanguages: Record<string, string> = {    'it': `${baseUrl}/it${path}`,
     'en': `${baseUrl}/en${path}`,
     'fr': `${baseUrl}/fr${path}`,
     'zh-Hant': `${baseUrl}/zh-hant${path}`,
@@ -26,8 +26,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default async function TermsOfServicePage({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale, namespace: 'affiliate' });
+export default async function TermsOfServicePage({ params }: { params: Promise<{ locale: string }> }) {  const t = await getTranslations({ locale, namespace: 'affiliate' });
 
   const content = {
     en: {

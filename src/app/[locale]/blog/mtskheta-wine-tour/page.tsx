@@ -6,8 +6,7 @@ import type { Metadata } from 'next';
 
 const PAGE_SLUG = 'mtskheta-wine-tour';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: 'blogPages.mtskhetaWineTour' });
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {  const t = await getTranslations({ locale, namespace: 'blogPages.mtskhetaWineTour' });
   const baseUrl = 'https://www.chroniclesofgeorgia.com';
   
   const alternateLanguages: Record<string, string> = {
@@ -31,8 +30,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default async function MtskhetaWineTourPage({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale, namespace: 'blogPages.mtskhetaWineTour' });
+export default async function MtskhetaWineTourPage({ params }: { params: Promise<{ locale: string }> }) {  const t = await getTranslations({ locale, namespace: 'blogPages.mtskhetaWineTour' });
   const affiliateT = await getTranslations({ locale, namespace: 'affiliate' });
 
   const cleanMarkdown = (text: string) => text.replace(/\*\*/g, '');

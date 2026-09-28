@@ -4,6 +4,8 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Required by @opennextjs/cloudflare (OpenNext reads .next/standalone)
+  output: 'standalone',
   images: {
     remotePatterns: [
       {

@@ -3,12 +3,12 @@ import Link from 'next/link';
 import { locales, defaultLocale } from '@/i18n/config';
 import { getTranslations } from 'next-intl/server';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const baseUrl = 'https://www.chroniclesofgeorgia.com';
   const path = '/privacy-policy';
 
-  const alternateLanguages: Record<string, string> = {
-    'ka': `${baseUrl}${path}`,
+  const alternateLanguages: Record<string, string> = {    'ka': `${baseUrl}${path}`,
     'en': `${baseUrl}/en${path}`,
     'ru': `${baseUrl}/ru${path}`,
     'zh-Hant': `${baseUrl}/zh-hant${path}`,
@@ -27,8 +27,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default async function PrivacyPolicyPage({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale, namespace: 'affiliate' });
+export default async function PrivacyPolicyPage({ params }: { params: Promise<{ locale: string }> }) {  const t = await getTranslations({ locale, namespace: 'affiliate' });
 
   const content = {
     en: {

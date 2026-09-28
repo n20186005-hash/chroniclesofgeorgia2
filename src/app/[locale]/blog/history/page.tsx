@@ -4,8 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import { locales, defaultLocale } from '@/i18n/config';
 import type { Metadata } from 'next';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: 'blogPages.history' });
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {  const t = await getTranslations({ locale, namespace: 'blogPages.history' });
   const baseUrl = 'https://www.chroniclesofgeorgia.com';
   
   const alternateLanguages: Record<string, string> = {

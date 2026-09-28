@@ -16,15 +16,15 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   const messages = await getMessages();
   const meta = (messages as Record<string, Record<string, string>>).meta;
 
   const baseUrl = 'https://www.chroniclesofgeorgia.com';
   
   // Base alternate languages for the home page (or base path)
-  const alternateLanguages: Record<string, string> = {
-    'ka': `${baseUrl}`,
+  const alternateLanguages: Record<string, string> = {    'ka': `${baseUrl}`,
     'en': `${baseUrl}/en`,
     'ru': `${baseUrl}/ru`,
     'zh-Hant': `${baseUrl}/zh-hant`,
@@ -50,13 +50,13 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default async function LocaleLayout({
   children,
-  params: { locale },
+  params,
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  if (!locales.includes(locale as typeof locales[number])) {
-    notFound();
+  const { locale } = await params;
+  if (!locales.includes(locale as typeof locales[number])) {    notFound();
   }
 
   setRequestLocale(locale);

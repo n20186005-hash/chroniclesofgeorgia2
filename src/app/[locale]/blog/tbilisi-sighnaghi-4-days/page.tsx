@@ -6,8 +6,7 @@ import type { Metadata } from 'next';
 
 const PAGE_SLUG = 'tbilisi-sighnaghi-4-days';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
-  const t = await getTranslations({ locale, namespace: 'blogPages.tbilisiSighnaghi4Days' });
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {  const t = await getTranslations({ locale, namespace: 'blogPages.tbilisiSighnaghi4Days' });
   const baseUrl = 'https://www.chroniclesofgeorgia.com';
   
   const alternateLanguages: Record<string, string> = {
