@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Chronicles of Georgia - Visitor Guide",
-    "description": "Independent visitor guide to the Chronicles of Georgia monument. Discover its history, architecture, reviews and visiting advice."
+    "title": "Chronicles of Georgia Tbilisi - Visitor Guide, History and Directions",
+    "description": "Plan your visit to the Chronicles of Georgia monument in Tbilisi. Find its history, location, directions, best time to visit, photos and practical visitor tips."
   },
   "nav": {
     "home": "Home",
@@ -20,15 +20,15 @@
   },
   "hero": {
     "title": "Chronicles of Georgia",
-    "subtitle": "Zurab Tsereteli's masterpiece - Georgia's historical monument",
+    "subtitle": "Zurab Tsereteli's monument in Tbilisi",
     "tagline": "Tbilisi's 'Black Stonehenge' — a Soviet-era masterpiece telling 3000 years of Georgian history",
     "rating": "4.8/5",
-    "ratingCount": "(12,626 reviews)",
+    "ratingCount": "(14,690 reviews)",
     "openHours": "Open 24 hours",
     "openStatus": "Open Now",
-    "address": "Tbilisi, Georgia",
+    "address": "QRC6+65V, Chronicles of Georgia Temqa, Tbilisi, Georgia",
     "getDirections": "Get Directions",
-    "keywords": ["Chronicles of Georgia", "Tbilisi monument", "Zurab Tsereteli", "Georgia history", "Soviet architecture", "tourist attraction"],
+    "keywords": ["Chronicles of Georgia", "Tbilisi monument", "Visitor guide", "Directions", "Zurab Tsereteli", "Best time to visit"],
     "openMaps": "Open in Maps",
     "location": "Tbilisi, Georgia",
     "cta": "Explore Monument"
@@ -139,7 +139,7 @@
   "map": {
     "title": "Location & Directions",
     "description": "Find the Chronicles of Georgia monument and plan your route using Google Maps.",
-    "address": "Tbilisi, Georgia",
+    "address": "QRC6+65V, Chronicles of Georgia Temqa, Tbilisi, Georgia",
     "openMaps": "Open in Maps"
   },
   "sources": {
@@ -241,18 +241,25 @@
       "description": "Discover the monument's unique architectural design and artistic value"
     },
     "travelTips": {
-      "title": "Travel Tips",
-      "description": "Detailed travel advice and practical information"
+      "title": "Visitor Guide",
+      "description": "Transport, timing, access and practical on-the-ground advice"
+    },
+    "bestTime": {
+      "title": "Best Time to Visit",
+      "description": "Sunrise, sunset, seasons, wind and photography conditions"
     },
     "photography": {
       "title": "Photography Guide",
       "description": "Best shooting spots and photography tips sharing"
     }
   },
+  "blogLayout": {
+    "relatedArticles": "Related Articles"
+  },
   "blogPages": {
     "history": {
-      "title": "Exploring Georgia's 3000-Year History",
-      "description": "Deep dive into the rich historical culture behind the Chronicles of Georgia monument",
+      "title": "Chronicles of Georgia Monument History",
+      "description": "Discover the history of the Chronicles of Georgia monument, its 16 pillars and Zurab Tsereteli's design vision.",
       "sections": {
         "ancient": {
           "title": "Ancient Civilization Origins",
@@ -340,8 +347,8 @@
       }
     },
     "travelTips": {
-      "title": "Travel Tips Guide",
-      "description": "Detailed travel advice and practical information for the Chronicles of Georgia monument",
+      "title": "Chronicles of Georgia Visitor Guide",
+      "description": "Practical visitor information for the Chronicles of Georgia, including transport, timing, what to bring and local tips.",
       "sections": {
         "planning": {
           "title": "Trip Planning",
@@ -397,6 +404,10 @@
           "quote": "The best travel experiences often come from exchanges with locals and unexpected discoveries. Keep an open mind and you'll have unexpected gains."
         }
       }
+    },
+    "bestTimeToVisit": {
+      "title": "Best Time to Visit Chronicles of Georgia: Sunrise, Sunset and Seasons",
+      "description": "Find the best time to visit the Chronicles of Georgia for sunrise, sunset, photography, seasonal weather and lighter crowds."
     },
     "photography": {
       "title": "Photography Guide Tips",

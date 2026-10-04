@@ -1,27 +1,17 @@
 import { useLocale } from 'next-intl';
 import Link from 'next/link';
-import { locales, defaultLocale } from '@/i18n/config';
 import { getTranslations } from 'next-intl/server';
+import { alternatesForPath, canonicalForPath, localizedPath } from '@/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const baseUrl = 'https://www.piazzapopoloascoli.com';
   const path = '/terms-of-service';
 
-  const alternateLanguages: Record<string, string> = {    'it': `${baseUrl}/it${path}`,
-    'en': `${baseUrl}/en${path}`,
-    'fr': `${baseUrl}/fr${path}`,
-    'zh-Hant': `${baseUrl}/zh-hant${path}`,
-    'x-default': `${baseUrl}/en${path}`,
-  };
-
-  const canonicalUrl = locale === defaultLocale ? `${baseUrl}${path}` : `${baseUrl}/${locale}${path}`;
-
   return {
-    title: 'Terms of Service - Piazza del Popolo',
+    title: 'Terms of Service - Chronicles of Georgia',
     alternates: {
-      canonical: canonicalUrl,
-      languages: alternateLanguages,
+      canonical: canonicalForPath(locale, path),
+      languages: alternatesForPath(path),
     },
   };
 }
@@ -148,7 +138,7 @@ export default async function TermsOfServicePage({ params }: { params: Promise<{
       <div className="max-w-3xl mx-auto px-6">
         <div className="mb-8">
           <Link 
-            href={`/${locale}`}
+            href={localizedPath(locale)}
             className="inline-flex items-center gap-2 text-sm font-medium hover:opacity-80 transition-opacity"
             style={{ color: 'var(--accent)' }}
           >

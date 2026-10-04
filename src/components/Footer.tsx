@@ -1,11 +1,12 @@
 'use client';
 import { useTranslations } from 'next-intl';
 import { useLocale } from 'next-intl';
+import { defaultLocale } from '@/i18n/config';
 
 export default function Footer() {
   const t = useTranslations('footer');
   const locale = useLocale();
-  const prefix = locale === 'it' ? '' : `/${locale}`;
+  const prefix = locale === defaultLocale ? '' : `/${locale}`;
 
   return (
     <footer style={{ background: 'var(--bg-primary)', borderTop: '1px solid var(--border-color)' }}>

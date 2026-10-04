@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales, defaultLocale } from '@/i18n/config';
+import { alternatesForPath, canonicalForPath, SITE_URL } from '@/seo';
 import '../globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -21,26 +22,13 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const messages = await getMessages();
   const meta = (messages as Record<string, Record<string, string>>).meta;
 
-  const baseUrl = 'https://www.chroniclesofgeorgia.com';
-  
-  // Base alternate languages for the home page (or base path)
-  const alternateLanguages: Record<string, string> = {    'ka': `${baseUrl}`,
-    'en': `${baseUrl}/en`,
-    'ru': `${baseUrl}/ru`,
-    'zh-Hant': `${baseUrl}/zh-hant`,
-    'zh-CN': `${baseUrl}/zh-cn`,
-    'x-default': `${baseUrl}`,
-  };
-
-  const canonicalUrl = locale === defaultLocale ? baseUrl : `${baseUrl}/${locale}`;
-
   return {
     title: meta?.title || 'Chronicles of Georgia - საქართველოს მატიანე',
     description: meta?.description || 'Independent tourism guide to the Chronicles of Georgia monument.',
-    metadataBase: new URL(baseUrl),
+    metadataBase: new URL(SITE_URL),
     alternates: {
-      canonical: canonicalUrl,
-      languages: alternateLanguages,
+      canonical: canonicalForPath(locale),
+      languages: alternatesForPath(),
     },
     other: {
       'google-adsense-account': 'ca-pub-9279583389810634',

@@ -23,7 +23,7 @@
     "subtitle": "祖拉布·采列捷利的杰作 - 格鲁吉亚历史纪念碑",
     "tagline": "第比利斯的'黑色巨石阵'——苏联时期的杰作，讲述格鲁吉亚3000年的历史",
     "rating": "4.8/5",
-    "ratingCount": "(12,626 评论)",
+    "ratingCount": "(14,690 评论)",
     "openHours": "24小时开放",
     "location": "第比利斯，格鲁吉亚",
     "cta": "探索纪念碑",
@@ -137,7 +137,7 @@
   "map": {
     "title": "位置和路线",
     "description": "使用谷歌地图找到纪念碑并规划您的路线。",
-    "address": "第比利斯，格鲁吉亚",
+    "address": "QRC6+65V, Chronicles of Georgia Temqa, Tbilisi, Georgia",
     "openMaps": "在Google地图中打开"
   },
   "sources": {
@@ -242,10 +242,17 @@
       "title": "旅行攻略",
       "description": "详细的旅行建议和实用信息"
     },
+    "bestTime": {
+      "title": "最佳造访时间",
+      "description": "日出、日落、季节、风况与拍照条件"
+    },
     "photography": {
       "title": "摄影指南",
       "description": "最佳拍摄点和摄影技巧分享"
     }
+  },
+  "blogLayout": {
+    "relatedArticles": "相关文章"
   },
   "blogPages": {
     "history": {
@@ -395,6 +402,10 @@
           "quote": "最好的旅行体验往往来自于与当地人的交流和意外的发现，保持开放的心态，您会有意想不到的收获。"
         }
       }
+    },
+    "bestTimeToVisit": {
+      "title": "格鲁吉亚编年史最佳造访时间",
+      "description": "整理日出、日落、季节、拍照光线与人流变化，帮助您安排更合适的造访时段。"
     },
     "photography": {
       "title": "摄影指南技巧",

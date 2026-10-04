@@ -1,33 +1,21 @@
 import BlogLayout from '@/components/BlogLayout';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
-import { locales, defaultLocale } from '@/i18n/config';
 import type { Metadata } from 'next';
+import { alternatesForPath, canonicalForPath } from '@/seo';
 
 const PAGE_SLUG = 'mtskheta-wine-tour';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'blogPages.mtskhetaWineTour' });
-  const baseUrl = 'https://www.chroniclesofgeorgia.com';
-  
-  const alternateLanguages: Record<string, string> = {
-    'ka': `${baseUrl}/blog/${PAGE_SLUG}`,
-    'en': `${baseUrl}/en/blog/${PAGE_SLUG}`,
-    'ru': `${baseUrl}/ru/blog/${PAGE_SLUG}`,
-    'zh-Hant': `${baseUrl}/zh-hant/blog/${PAGE_SLUG}`,
-    'zh-CN': `${baseUrl}/zh-cn/blog/${PAGE_SLUG}`,
-    'x-default': `${baseUrl}/blog/${PAGE_SLUG}`,
-  };
-
-  const canonicalUrl = locale === defaultLocale ? `${baseUrl}/blog/${PAGE_SLUG}` : `${baseUrl}/${locale}/blog/${PAGE_SLUG}`;
 
   return {
     title: `${t('title')} | Chronicles of Georgia`,
     description: t('description'),
     alternates: {
-      canonical: canonicalUrl,
-      languages: alternateLanguages,
+      canonical: canonicalForPath(locale, `/blog/${PAGE_SLUG}`),
+      languages: alternatesForPath(`/blog/${PAGE_SLUG}`),
     },
   };
 }

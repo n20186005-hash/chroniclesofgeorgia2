@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { localizedPath } from '@/seo';
 
 export function CookieSettingsClient({ locale }: { locale: string }) {
   const [analyticsAccepted, setAnalyticsAccepted] = useState(true);
@@ -126,7 +127,7 @@ export function CookieSettingsClient({ locale }: { locale: string }) {
       <div className="max-w-3xl mx-auto px-6">
         <div className="mb-8">
           <Link 
-            href={`/${locale}`}
+            href={localizedPath(locale)}
             className="inline-flex items-center gap-2 text-sm font-medium hover:opacity-80 transition-opacity"
             style={{ color: 'var(--accent)' }}
           >

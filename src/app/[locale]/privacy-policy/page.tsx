@@ -1,28 +1,17 @@
 import { useLocale } from 'next-intl';
 import Link from 'next/link';
-import { locales, defaultLocale } from '@/i18n/config';
 import { getTranslations } from 'next-intl/server';
+import { alternatesForPath, canonicalForPath, localizedPath } from '@/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const baseUrl = 'https://www.chroniclesofgeorgia.com';
   const path = '/privacy-policy';
-
-  const alternateLanguages: Record<string, string> = {    'ka': `${baseUrl}${path}`,
-    'en': `${baseUrl}/en${path}`,
-    'ru': `${baseUrl}/ru${path}`,
-    'zh-Hant': `${baseUrl}/zh-hant${path}`,
-    'zh-CN': `${baseUrl}/zh-cn${path}`,
-    'x-default': `${baseUrl}/en${path}`,
-  };
-
-  const canonicalUrl = locale === defaultLocale ? `${baseUrl}${path}` : `${baseUrl}/${locale}${path}`;
 
   return {
     title: 'Privacy Policy - Chronicles of Georgia',
     alternates: {
-      canonical: canonicalUrl,
-      languages: alternateLanguages,
+      canonical: canonicalForPath(locale, path),
+      languages: alternatesForPath(path),
     },
   };
 }
@@ -123,7 +112,7 @@ export default async function PrivacyPolicyPage({ params }: { params: Promise<{ 
         },
         {
           title: "2. ინფორმაციის შეგროვება",
-          text: "ჩვენ ვიცავთ თქვენს კონფიდენციალურობას. ეს საიტი ძირითადად slouz的信息平台ა საქართველოს მატიანის მონუმენტის შესახებ და ჩვეულებრივ არ აგროვებს აქტიურად პერსონალურ ინფორმაციას მომხმარებლებისგან. თუმცა, სერვერის ჟურნალებისა და ანალიტიკის ინსტრუმენტების მეშვეობით, ჩვენ შეიძლება შევაგროვოთ არაპერსონალური ინფორმაცია, როგორიცაა ბრაუზერის ტიპი, წვდომის დრო და გვერდების ნახვის ჩანაწერები."
+          text: "ჩვენ ვიცავთ თქვენს კონფიდენციალურობას. ეს საიტი ძირითადად წარმოადგენს საინფორმაციო პლატფორმას საქართველოს მატიანის მონუმენტის შესახებ და ჩვეულებრივ არ აგროვებს მომხმარებლების პერსონალურ ინფორმაციას აქტიურად. თუმცა, სერვერის ჟურნალებისა და ანალიტიკის ინსტრუმენტების მეშვეობით, ჩვენ შეიძლება შევაგროვოთ არაპერსონალური ინფორმაცია, როგორიცაა ბრაუზერის ტიპი, წვდომის დრო და გვერდების ნახვის ჩანაწერები."
         },
         {
           title: "3. Cookie-ების გამოყენება",
@@ -149,7 +138,7 @@ export default async function PrivacyPolicyPage({ params }: { params: Promise<{ 
       <div className="max-w-3xl mx-auto px-6">
         <div className="mb-8">
           <Link 
-            href={`/${locale}`}
+            href={localizedPath(locale)}
             className="inline-flex items-center gap-2 text-sm font-medium hover:opacity-80 transition-opacity"
             style={{ color: 'var(--accent)' }}
           >

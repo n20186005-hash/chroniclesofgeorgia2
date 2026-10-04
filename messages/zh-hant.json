@@ -23,7 +23,7 @@
     "subtitle": "祖拉布·采列捷利的傑作 - 格魯吉亞歷史紀念碑",
     "tagline": "第比利斯的“黑色巨石陣”——蘇聯時期的傑作，講述喬治亞3000年的歷史",
     "rating": "4.8/5",
-    "ratingCount": "(12,626 評論)",
+    "ratingCount": "(14,690 評論)",
     "openHours": "24 小時開放",
     "openMaps": "在 Google 地圖中打開",
     "keywords": ["紀念碑", "歷史", "格魯吉亞文化", "祖拉布·采列捷利", "蘇聯現代主義", "第比利斯", "攝影", "旅遊"]
@@ -211,10 +211,17 @@
       "title": "旅行攻略",
       "description": "詳細的旅行建議和實用信息"
     },
+    "bestTime": {
+      "title": "最佳造訪時間",
+      "description": "日出、日落、季節、風況與拍照條件"
+    },
     "photography": {
       "title": "攝影指南",
       "description": "最佳拍攝點和攝影技巧分享"
     }
+  },
+  "blogLayout": {
+    "relatedArticles": "相關文章"
   },
   "blogPages": {
     "history": {
@@ -364,6 +371,10 @@
           "quote": "與當地導遊交流，可以了解更多關於紀念碑的歷史故事和文化背景。"
         }
       }
+    },
+    "bestTimeToVisit": {
+      "title": "格魯吉亞編年史最佳造訪時間",
+      "description": "整理日出、日落、季節、拍照光線與人潮變化，幫助您安排更合適的造訪時段。"
     },
     "photography": {
       "title": "格魯吉亞編年史紀念碑攝影指南",

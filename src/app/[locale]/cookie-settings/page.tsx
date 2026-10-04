@@ -1,26 +1,16 @@
 import { useLocale } from 'next-intl';
 import { CookieSettingsClient } from './client';
-import { defaultLocale } from '@/i18n/config';
+import { alternatesForPath, canonicalForPath } from '@/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const baseUrl = 'https://www.piazzapopoloascoli.com';
   const path = '/cookie-settings';
 
-  const alternateLanguages: Record<string, string> = {    'it': `${baseUrl}/it${path}`,
-    'en': `${baseUrl}/en${path}`,
-    'fr': `${baseUrl}/fr${path}`,
-    'zh-Hant': `${baseUrl}/zh-hant${path}`,
-    'x-default': `${baseUrl}/en${path}`,
-  };
-
-  const canonicalUrl = locale === defaultLocale ? `${baseUrl}${path}` : `${baseUrl}/${locale}${path}`;
-
   return {
-    title: 'Cookie Settings - Piazza del Popolo',
+    title: 'Cookie Settings - Chronicles of Georgia',
     alternates: {
-      canonical: canonicalUrl,
-      languages: alternateLanguages,
+      canonical: canonicalForPath(locale, path),
+      languages: alternatesForPath(path),
     },
   };
 }

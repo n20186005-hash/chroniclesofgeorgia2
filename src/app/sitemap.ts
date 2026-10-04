@@ -7,6 +7,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Core routes
   const routes = [
     '',
+    '/blog',
+    '/blog/history',
+    '/blog/architecture',
+    '/blog/travel-tips',
+    '/blog/best-time-to-visit',
+    '/blog/photography',
+    '/blog/mtskheta-wine-tour',
+    '/blog/tbilisi-sighnaghi-4-days',
+    '/blog/stereoscopic-history',
+    '/blog/hiking-unfinished-epic',
+    '/blog/cultural-echo-caucasus',
+    '/blog/monument-nostalgia-peace',
     '/privacy-policy',
     '/terms-of-service',
     '/cookie-settings',

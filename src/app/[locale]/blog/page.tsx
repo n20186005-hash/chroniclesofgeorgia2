@@ -1,33 +1,22 @@
 import BlogLayout from '@/components/BlogLayout';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
-import { locales, defaultLocale } from '@/i18n/config';
+import { defaultLocale } from '@/i18n/config';
 import type { Metadata } from 'next';
 import TripAdBanner from '@/components/TripAdBanner';
 import RecommendedTours from '@/components/RecommendedTours';
+import { alternatesForPath, canonicalForPath } from '@/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'blogPreview' });
-  const baseUrl = 'https://www.chroniclesofgeorgia.com';
-  
-  const alternateLanguages: Record<string, string> = {
-    'ka': `${baseUrl}/blog`,
-    'en': `${baseUrl}/en/blog`,
-    'ru': `${baseUrl}/ru/blog`,
-    'zh-Hant': `${baseUrl}/zh-hant/blog`,
-    'zh-CN': `${baseUrl}/zh-cn/blog`,
-    'x-default': `${baseUrl}/blog`,
-  };
-
-  const canonicalUrl = locale === defaultLocale ? `${baseUrl}/blog` : `${baseUrl}/${locale}/blog`;
 
   return {
     title: `${t('title')} | Chronicles of Georgia`,
     description: t('subtitle'),
     alternates: {
-      canonical: canonicalUrl,
-      languages: alternateLanguages,
+      canonical: canonicalForPath(locale, '/blog'),
+      languages: alternatesForPath('/blog'),
     },
   };
 }
@@ -69,6 +58,14 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ loca
       description: t('travelTips.description'),
       link: `${prefix}/blog/travel-tips`,
       themeVar: 'var(--blog-travel-color)'
+    },
+    {
+      id: 'best-time',
+      icon: '🌅',
+      title: t('bestTime.title'),
+      description: t('bestTime.description'),
+      link: `${prefix}/blog/best-time-to-visit`,
+      themeVar: '#ea580c'
     },
     {
       id: 'photography',

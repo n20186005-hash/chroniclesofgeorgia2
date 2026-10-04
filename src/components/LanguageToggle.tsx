@@ -1,6 +1,6 @@
 'use client';
 import { useLocale } from 'next-intl';
-import { useRouter, usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { useState, useRef, useEffect } from 'react';
 import { locales, defaultLocale } from '@/i18n/config';
 
@@ -14,7 +14,6 @@ const localeNames: Record<string, string> = {
 
 export default function LanguageToggle() {
   const locale = useLocale();
-  const router = useRouter();
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);

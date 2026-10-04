@@ -42,6 +42,14 @@ export default function BlogPreview() {
       themeVar: 'var(--blog-travel-color)'
     },
     {
+      id: 'best-time',
+      icon: '🌅',
+      title: t('bestTime.title'),
+      description: t('bestTime.description'),
+      link: `${prefix}/blog/best-time-to-visit`,
+      themeVar: '#ea580c'
+    },
+    {
       id: 'photography',
       icon: '📸',
       title: t('photography.title'),
