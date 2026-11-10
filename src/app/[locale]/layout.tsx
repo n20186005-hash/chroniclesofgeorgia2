@@ -19,7 +19,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
-  const messages = await getMessages();
+  const messages = await getMessages({locale: locales.includes(locale as typeof locales[number]) ? locale : defaultLocale});
   const meta = (messages as Record<string, Record<string, string>>).meta;
 
   return {

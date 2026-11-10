@@ -7,8 +7,6 @@ import {canonicalForPath, alternatesForPath, localizedPath} from '@/seo';
 import {nearbyContent, nearbySources, type NearbySourceId} from '@/content/nearby';
 
 const slugs = ['tbilisi-sea', 'gardenia-shevardnadze'] as const;
-// The published catalogue is finite; other slugs must return 404, not enter SSG fallback.
-export const dynamicParams = false;
 type Params = {locale: string; slug: string};
 
 function getPage({locale, slug}: Params) {
