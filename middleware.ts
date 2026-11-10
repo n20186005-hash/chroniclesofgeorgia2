@@ -4,6 +4,8 @@ import {locales, defaultLocale} from './src/i18n/config';
 export default createMiddleware({
   locales,
   defaultLocale,
+  // The unprefixed canonical URL always represents English, even after visiting another locale.
+  localeDetection: false,
   localePrefix: 'as-needed' // Only adds prefix when it's not the default locale
 });
 

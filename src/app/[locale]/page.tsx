@@ -1,3 +1,4 @@
+import NearbyPreview from '@/components/NearbyPreview';
 import Hero from '@/components/Hero';
 import Intro from '@/components/Intro';
 import Gallery from '@/components/Gallery';
@@ -9,7 +10,8 @@ import Sources from '@/components/Sources';
 import TripAdBanner from '@/components/TripAdBanner';
 import RecommendedTours from '@/components/RecommendedTours';
 
-export default function HomePage() {
+export default async function HomePage({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
   return (
     <>
       <Hero />
@@ -33,6 +35,8 @@ export default function HomePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <RecommendedTours />
       </div>
+
+      <NearbyPreview locale={locale} />
 
       <MapEmbed />
       <Sources />

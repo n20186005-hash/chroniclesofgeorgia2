@@ -1,3 +1,4 @@
+import NearbyPreview from '@/components/NearbyPreview';
 import BlogLayout from '@/components/BlogLayout';
 import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
@@ -246,6 +247,8 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ loca
             ))}
           </div>
         </section>
+
+        <NearbyPreview locale={locale} compact />
 
         <RecommendedTours />
       </div>
