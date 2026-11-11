@@ -63,11 +63,44 @@ export default function Gallery() {
     if (!selectedImage || !dialogRef.current) return;
     const dialog = dialogRef.current;
     const opener = openerRef.current;
+    const openedUrl = window.location.href;
+    const { scrollX, scrollY } = window;
+    const root = document.documentElement;
+    const body = document.body;
+    const properties: Array<[CSSStyleDeclaration, string]> = [
+      [root.style, 'overflow-x'],
+      [root.style, 'overflow-y'],
+      [body.style, 'overflow-x'],
+      [body.style, 'overflow-y'],
+      [root.style, 'scrollbar-gutter'],
+    ];
+    const originalStyles = properties.map(([style, property]) => ({
+      style,
+      property,
+      value: style.getPropertyValue(property),
+      priority: style.getPropertyPriority(property),
+    }));
+
+    // Keep the desktop scrollbar's space while preventing background scrolling.
+    if (window.innerWidth > root.clientWidth &&
+        !getComputedStyle(root).getPropertyValue('scrollbar-gutter').includes('stable')) {
+      root.style.setProperty('scrollbar-gutter', 'stable', 'important');
+    }
+    root.style.setProperty('overflow', 'hidden', 'important');
+    body.style.setProperty('overflow', 'hidden', 'important');
     dialog.showModal();
-    closeButtonRef.current?.focus();
+    closeButtonRef.current?.focus({ preventScroll: true });
     return () => {
       dialog.close();
-      opener?.focus();
+      originalStyles.forEach(({ style, property, value, priority }) => {
+        if (value) style.setProperty(property, value, priority);
+        else style.removeProperty(property);
+      });
+      if (window.location.href === openedUrl && opener?.isConnected) {
+        // Ignore the page's smooth-anchor behavior when restoring the viewport.
+        window.scrollTo({ left: scrollX, top: scrollY, behavior: 'instant' });
+        opener.focus({ preventScroll: true });
+      }
     };
   }, [selectedImage]);
 
