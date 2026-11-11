@@ -67,13 +67,19 @@ export default function Gallery() {
     const { scrollX, scrollY } = window;
     const root = document.documentElement;
     const body = document.body;
+    const header = document.querySelector<HTMLElement>('header');
+    const clientWidth = root.clientWidth;
+    const bodyPaddingRight = parseFloat(getComputedStyle(body).getPropertyValue('padding-right')) || 0;
+    const headerRight = header ? parseFloat(getComputedStyle(header).getPropertyValue('right')) || 0 : 0;
     const properties: Array<[CSSStyleDeclaration, string]> = [
       [root.style, 'overflow-x'],
       [root.style, 'overflow-y'],
       [body.style, 'overflow-x'],
       [body.style, 'overflow-y'],
       [root.style, 'scrollbar-gutter'],
+      [body.style, 'padding-right'],
     ];
+    if (header) properties.push([header.style, 'right']);
     const originalStyles = properties.map(([style, property]) => ({
       style,
       property,
@@ -89,6 +95,12 @@ export default function Gallery() {
     root.style.setProperty('overflow', 'hidden', 'important');
     body.style.setProperty('overflow', 'hidden', 'important');
     dialog.showModal();
+    // Native dialogs can drop the gutter even when scrollbar-gutter is stable.
+    const lostGutter = Math.max(0, root.clientWidth - clientWidth);
+    if (lostGutter > 0) {
+      body.style.setProperty('padding-right', `${bodyPaddingRight + lostGutter}px`, 'important');
+      header?.style.setProperty('right', `${headerRight + lostGutter}px`, 'important');
+    }
     closeButtonRef.current?.focus({ preventScroll: true });
     return () => {
       dialog.close();

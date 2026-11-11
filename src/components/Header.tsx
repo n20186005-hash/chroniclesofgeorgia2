@@ -33,7 +33,7 @@ export default function Header() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+      className="fixed top-0 left-0 right-0 z-50 transition-[background-color,border-color,backdrop-filter] duration-300"
       style={{
         background: scrolled ? 'var(--bg-primary)' : 'transparent',
         borderBottom: scrolled ? '1px solid var(--border-color)' : 'none',
