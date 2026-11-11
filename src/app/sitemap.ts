@@ -22,6 +22,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/privacy-policy',
     '/terms-of-service',
     '/cookie-settings',
+    '/nearby/tbilisi-sea',
+    '/nearby/gardenia-shevardnadze',
   ];
 
   const sitemapEntries: MetadataRoute.Sitemap = [];

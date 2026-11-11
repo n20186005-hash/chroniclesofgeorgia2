@@ -1,5 +1,6 @@
 'use client';
 import { useTranslations } from 'next-intl';
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image';
@@ -14,6 +15,24 @@ interface BlogLayoutProps {
   coverImage?: string;
 }
 
+// Retained source records: these exact upstream cover URLs returned 404 on 2026-11-10.
+// Keep them out of active image/preload markup until a replacement is verified.
+const unavailableCovers = new Set([
+  'https://images.unsplash.com/photo-1543888761-002fdf5eb8d6?q=80&w=2070&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1555580289-417101886f78?q=80&w=2070&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1568864455826-66380633b49d?q=80&w=2070&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1582226296561-1250df990b79?q=80&w=2070&auto=format&fit=crop',
+  'https://images.unsplash.com/photo-1596484552993-80b671a81f3b?q=80&w=2070&auto=format&fit=crop',
+]);
+
+const unavailableCoverLabels: Record<string, string> = {
+  en: 'Cover image temporarily unavailable',
+  ka: 'გარეკანის ფოტო დროებით მიუწვდომელია',
+  ru: 'Изображение обложки временно недоступно',
+  'zh-hant': '封面圖片暫時無法使用',
+  'zh-cn': '封面图片暂时无法使用',
+};
+
 export default function BlogLayout({ title, description, children, coverImage }: BlogLayoutProps) {
   const pathname = usePathname();
   const firstSegment = pathname.split('/')[1] || '';
@@ -25,6 +44,9 @@ export default function BlogLayout({ title, description, children, coverImage }:
 
   // Default cover image if not provided
   const defaultImage = "https://images.unsplash.com/photo-1543888761-002fdf5eb8d6?q=80&w=2070&auto=format&fit=crop";
+  const imageSource = coverImage || defaultImage;
+  const [failedImage, setFailedImage] = useState<string | null>(null);
+  const coverUnavailable = unavailableCovers.has(imageSource) || failedImage === imageSource;
 
   const relatedPosts = [
     {
@@ -47,15 +69,16 @@ export default function BlogLayout({ title, description, children, coverImage }:
   return (
     <div className="min-h-screen bg-white">
       {/* Blog Header (Replicating Homepage Hero) */}
-      <div className="relative h-[60vh] min-h-[400px] flex flex-col justify-center">
-        <Image
-          src={coverImage || defaultImage}
+      <div className="relative min-h-[max(60vh,400px)] py-12 flex flex-col justify-center" style={{background: '#292524'}}>
+        {!coverUnavailable && <Image
+          src={imageSource}
           alt={title}
           fill
           priority
           className="object-cover object-center"
           quality={90}
-        />
+          onError={() => setFailedImage(imageSource)}
+        />}
         <div className="absolute inset-0" style={{ background: 'var(--hero-overlay)' }}></div>
         
         <div className="relative max-w-4xl mx-auto px-6 w-full mt-16">
@@ -73,6 +96,9 @@ export default function BlogLayout({ title, description, children, coverImage }:
             )}
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-md">{title}</h1>
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl drop-shadow leading-relaxed">{description}</p>
+            {coverUnavailable && (
+              <p className="mt-4 text-sm text-gray-300">{unavailableCoverLabels[locale]}</p>
+            )}
           </div>
         </div>
       </div>

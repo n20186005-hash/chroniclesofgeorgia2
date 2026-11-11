@@ -1,3 +1,5 @@
+// Previous cover source retained for provenance; the photograph depicts Dubai, not this monument.
+// https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070&auto=format&fit=crop
 import BlogLayout from '@/components/BlogLayout';
 import type { Locale } from '@/i18n/config';
 import { getTranslations } from 'next-intl/server';
@@ -318,7 +320,7 @@ export default async function BestTimeToVisitPage({ params }: { params: Promise<
     <BlogLayout
       title={t('title')}
       description={t('description')}
-      coverImage="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070&auto=format&fit=crop"
+      coverImage="/gallery/images (1).jpg"
     >
       <div className="space-y-10">
         <section className="space-y-6">
